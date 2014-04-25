@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>FMITest.SimpleConnections.StringParameters</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="&quot;Connection of one FMU with a source, and the FMU has a String parameter holding a file name and a file is read into the FMU&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE StringParameters<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="FMITest.SimpleConnections.StringParameters"></a><a href="FMITest_SimpleConnections.html#FMITest.SimpleConnections"
+>FMITest.SimpleConnections</a>.StringParameters</h2>
+<p>
+<b>Connection of one FMU with a source, and the FMU has a String parameter holding a file name and a file is read into the FMU</b><br>
+</p>
+<h3>Information</h3>
+
+<p>
+The following issues are checked with this test model:
+</p>
+
+<ul>
+<li> Support for String parameters, so it is possible to set a parameter of type String 
+     for an FMU instance. In the test model, a file name must be defined.</li>
+
+<li> Support for reading data from a file. The difficult part is that the file to be read
+     must be identified when exporting the FMU and this file has to be stored inside the
+     FMU, and when importing the FMU, this file has to be read during importing
+     or during initialization. </li>
+</ul>
+
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons_ExamplesPackage.html#Modelica.Icons.ExamplesPackage"
+>Modelica.Icons.ExamplesPackage</a> (Icon for packages containing runnable examples).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="FMITest.SimpleConnections4d2ffe766b3fe49arenceS.png" alt="FMITest.SimpleConnections.StringParameters.WithFMUsReference" width="20" height="20" align="top">&nbsp;<a href="FMITest_SimpleConnections_StringParameters.html#FMITest.SimpleConnections.StringParameters.WithFMUsReference"
+>WithFMUsReference</a>
+</td>
+<td>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.SimpleConnections4d2ffe766b3fe49arenceS.png" alt="FMITest.SimpleConnections.StringParameters.WithFMUs" width="20" height="20" align="top">&nbsp;<a href="FMITest_SimpleConnections_StringParameters.html#FMITest.SimpleConnections.StringParameters.WithFMUs"
+>WithFMUs</a>
+</td>
+<td>Solution with FMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.SimpleConnections96f6d5baa6a27fbaodelsS.png" alt="FMITest.SimpleConnections.StringParameters.FMUModels" width="20" height="20" align="top">&nbsp;<a href="FMITest_SimpleConnections_StringParameters_FMUModels.html#FMITest.SimpleConnections.StringParameters.FMUModels"
+>FMUModels</a>
+</td>
+<td>For all models in this package an FMU must be generated</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUsReference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.SimpleConnections4d2ffe766b3fe49arenceI.png" alt="FMITest.SimpleConnections.StringParameters.WithFMUsReference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.SimpleConnections.StringParameters.WithFMUsReference"></a><a href="FMITest_SimpleConnections_StringParameters.html#FMITest.SimpleConnections.StringParameters"
+>FMITest.SimpleConnections.StringParameters</a>.WithFMUsReference</h2>
+<p>
+<b>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</b>
+<br>
+<br><img src="FMITest.SimpleConnections4d2ffe766b3fe49arenceD.png" alt="FMITest.SimpleConnections.StringParameters.WithFMUsReference">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUsReference <span style="color: #006400">
+  &quot;Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+  <span style="color: blue">import </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/ModelicaServices%201.2/help/ModelicaServices_ExternalReferences.html#ModelicaServices.ExternalReferences.loadResource"
+>ModelicaServices.ExternalReferences.loadResource</a>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Sine"
+>Modelica.Blocks.Sources.Sine</a> sine(amplitude=1, freqHz=2);
+  <a href="FMITest_SimpleConnections_StringParameters_FMUModels.html#FMITest.SimpleConnections.StringParameters.FMUModels.InertiaFromFile"
+>FMUModels.InertiaFromFile</a> inertiaFromFile(file=<span style="color: red">loadResource</span>(
+        &quot;modelica://FMITest/Resources/Data/data_inertia1.txt&quot;));
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(sine.y, inertiaFromFile.tau);
+<span style="color: blue">end </span>WithFMUsReference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUs<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.SimpleConnections4d2ffe766b3fe49arenceI.png" alt="FMITest.SimpleConnections.StringParameters.WithFMUs" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.SimpleConnections.StringParameters.WithFMUs"></a><a href="FMITest_SimpleConnections_StringParameters.html#FMITest.SimpleConnections.StringParameters"
+>FMITest.SimpleConnections.StringParameters</a>.WithFMUs</h2>
+<p>
+<b>Solution with FMUs</b>
+<br>
+<br><img src="FMITest.SimpleConnections4d2ffe766b3fe49arenceD.png" alt="FMITest.SimpleConnections.StringParameters.WithFMUs">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUs <span style="color: #006400">&quot;Solution with FMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+  <span style="color: blue">import </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/ModelicaServices%201.2/help/ModelicaServices_ExternalReferences.html#ModelicaServices.ExternalReferences.loadResource"
+>ModelicaServices.ExternalReferences.loadResource</a>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Sine"
+>Modelica.Blocks.Sources.Sine</a> sine(amplitude=1, freqHz=2);
+  <a href="FMITest_SimpleConnections_StringParameters_FMUModels.html#FMITest.SimpleConnections.StringParameters.FMUModels.InertiaFromFile"
+>FMUModels.InertiaFromFile</a> inertiaFromFile(file=<span style="color: red">loadResource</span>(
+        &quot;modelica://FMITest/Resources/Data/data_inertia1.txt&quot;));
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(sine.y, inertiaFromFile.tau);
+<span style="color: blue">end </span>WithFMUs;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Fri Apr 25 16:23:00 2014.
+</address>
+</body>
+</html>

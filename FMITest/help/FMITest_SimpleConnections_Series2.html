@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>FMITest.SimpleConnections.Series2</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="&quot;Simple series connection of two FMUs consisting of a first order system per FMU&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Series2<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="FMITest.SimpleConnections.Series2"></a><a href="FMITest_SimpleConnections.html#FMITest.SimpleConnections"
+>FMITest.SimpleConnections</a>.Series2</h2>
+<p>
+<b>Simple series connection of two FMUs consisting of a first order system per FMU</b><br>
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons_ExamplesPackage.html#Modelica.Icons.ExamplesPackage"
+>Modelica.Icons.ExamplesPackage</a> (Icon for packages containing runnable examples).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="FMITest.SimpleConnectionsfa8dbde365c2e964renceS.png" alt="FMITest.SimpleConnections.Series2.Reference" width="20" height="20" align="top">&nbsp;<a href="FMITest_SimpleConnections_Series2.html#FMITest.SimpleConnections.Series2.Reference"
+>Reference</a>
+</td>
+<td>Reference solution in pure Modelica</td>
+</tr>
+<tr>
+<td><img src="FMITest.SimpleConnectionsfa8dbde365c2e964renceS.png" alt="FMITest.SimpleConnections.Series2.WithFMUsReference" width="20" height="20" align="top">&nbsp;<a href="FMITest_SimpleConnections_Series2.html#FMITest.SimpleConnections.Series2.WithFMUsReference"
+>WithFMUsReference</a>
+</td>
+<td>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.SimpleConnectionsfa8dbde365c2e964renceS.png" alt="FMITest.SimpleConnections.Series2.WithFMUs" width="20" height="20" align="top">&nbsp;<a href="FMITest_SimpleConnections_Series2.html#FMITest.SimpleConnections.Series2.WithFMUs"
+>WithFMUs</a>
+</td>
+<td>Solution with FMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.SimpleConnectionsd32345e8f41251deodelsS.png" alt="FMITest.SimpleConnections.Series2.FMUModels" width="20" height="20" align="top">&nbsp;<a href="FMITest_SimpleConnections_Series2_FMUModels.html#FMITest.SimpleConnections.Series2.FMUModels"
+>FMUModels</a>
+</td>
+<td>For all models in this package an FMU must be generated</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Reference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.SimpleConnectionsfa8dbde365c2e964renceI.png" alt="FMITest.SimpleConnections.Series2.Reference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.SimpleConnections.Series2.Reference"></a><a href="FMITest_SimpleConnections_Series2.html#FMITest.SimpleConnections.Series2"
+>FMITest.SimpleConnections.Series2</a>.Reference</h2>
+<p>
+<b>Reference solution in pure Modelica</b>
+<br>
+<br><img src="FMITest.SimpleConnectionsfa8dbde365c2e964renceD.png" alt="FMITest.SimpleConnections.Series2.Reference">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> Reference <span style="color: #006400">&quot;Reference solution in pure Modelica&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Continuous.html#Modelica.Blocks.Continuous.FirstOrder"
+>Modelica.Blocks.Continuous.FirstOrder</a> firstOrder1(initType=Modelica.Blocks.Types.Init.InitialState,
+      T=0.2);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Continuous.html#Modelica.Blocks.Continuous.FirstOrder"
+>Modelica.Blocks.Continuous.FirstOrder</a> firstOrder2(
+    k=1.2,
+    initType=Modelica.Blocks.Types.Init.SteadyState,
+    T=0.1);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Step"
+>Modelica.Blocks.Sources.Step</a> step;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(firstOrder1.y, firstOrder2.u);
+  <span style="color: red">connect</span>(step.y, firstOrder1.u);
+<span style="color: blue">end </span>Reference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUsReference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.SimpleConnectionsfa8dbde365c2e964renceI.png" alt="FMITest.SimpleConnections.Series2.WithFMUsReference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.SimpleConnections.Series2.WithFMUsReference"></a><a href="FMITest_SimpleConnections_Series2.html#FMITest.SimpleConnections.Series2"
+>FMITest.SimpleConnections.Series2</a>.WithFMUsReference</h2>
+<p>
+<b>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</b>
+<br>
+<br><img src="FMITest.SimpleConnections106cf164db1100c4renceD.png" alt="FMITest.SimpleConnections.Series2.WithFMUsReference">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUsReference <span style="color: #006400">
+  &quot;Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+
+  <a href="FMITest_SimpleConnections_Series2_FMUModels.html#FMITest.SimpleConnections.Series2.FMUModels.FirstOrder1"
+>FMUModels.FirstOrder1</a> firstOrder1(initType=Modelica.Blocks.Types.Init.InitialState,
+      T=0.2);
+  <a href="FMITest_SimpleConnections_Series2_FMUModels.html#FMITest.SimpleConnections.Series2.FMUModels.FirstOrder2"
+>FMUModels.FirstOrder2</a> firstOrder2(
+    k=1.2,
+    initType=Modelica.Blocks.Types.Init.SteadyState,
+    T=0.1);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Step"
+>Modelica.Blocks.Sources.Step</a> step;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(firstOrder1.y, firstOrder2.u);
+  <span style="color: red">connect</span>(step.y, firstOrder1.u);
+<span style="color: blue">end </span>WithFMUsReference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUs<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.SimpleConnectionsfa8dbde365c2e964renceI.png" alt="FMITest.SimpleConnections.Series2.WithFMUs" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.SimpleConnections.Series2.WithFMUs"></a><a href="FMITest_SimpleConnections_Series2.html#FMITest.SimpleConnections.Series2"
+>FMITest.SimpleConnections.Series2</a>.WithFMUs</h2>
+<p>
+<b>Solution with FMUs</b>
+<br>
+<br><img src="FMITest.SimpleConnections106cf164db1100c4renceD.png" alt="FMITest.SimpleConnections.Series2.WithFMUs">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUs <span style="color: #006400">&quot;Solution with FMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+
+  <a href="FMITest_SimpleConnections_Series2_FMUModels.html#FMITest.SimpleConnections.Series2.FMUModels.FirstOrder1"
+>FMUModels.FirstOrder1</a> firstOrder1(initType=Modelica.Blocks.Types.Init.InitialState,
+      T=0.2);
+  <a href="FMITest_SimpleConnections_Series2_FMUModels.html#FMITest.SimpleConnections.Series2.FMUModels.FirstOrder2"
+>FMUModels.FirstOrder2</a> firstOrder2(
+    k=1.2,
+    initType=Modelica.Blocks.Types.Init.SteadyState,
+    T=0.1);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Step"
+>Modelica.Blocks.Sources.Step</a> step;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(firstOrder1.y, firstOrder2.u);
+  <span style="color: red">connect</span>(step.y, firstOrder1.u);
+<span style="color: blue">end </span>WithFMUs;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Fri Apr 25 16:22:57 2014.
+</address>
+</body>
+</html>

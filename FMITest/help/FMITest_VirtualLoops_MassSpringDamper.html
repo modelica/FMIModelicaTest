@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>FMITest.VirtualLoops.MassSpringDamper</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="&quot;Spring damper system with a mass that leads to an artificial loop with FMUs (one FMU is the mass, the other the force element)&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE MassSpringDamper<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="FMITest.VirtualLoops.MassSpringDamper"></a><a href="FMITest_VirtualLoops.html#FMITest.VirtualLoops"
+>FMITest.VirtualLoops</a>.MassSpringDamper</h2>
+<p>
+<b>Spring damper system with a mass that leads to an artificial loop with FMUs (one FMU is the mass, the other the force element)</b><br>
+</p>
+<h3>Information</h3>
+
+<p>
+The Spring-Damper part of this model was proposed by SIMPACK AG
+as a test example for an FMU.
+</p>
+
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons_ExamplesPackage.html#Modelica.Icons.ExamplesPackage"
+>Modelica.Icons.ExamplesPackage</a> (Icon for packages containing runnable examples).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="FMITest.VirtualLoops.Masse054ee5f80e66195renceS.png" alt="FMITest.VirtualLoops.MassSpringDamper.Reference" width="20" height="20" align="top">&nbsp;<a href="FMITest_VirtualLoops_MassSpringDamper.html#FMITest.VirtualLoops.MassSpringDamper.Reference"
+>Reference</a>
+</td>
+<td>Reference solution in pure Modelica</td>
+</tr>
+<tr>
+<td><img src="FMITest.VirtualLoops.Masse054ee5f80e66195renceS.png" alt="FMITest.VirtualLoops.MassSpringDamper.WithFMUsReference" width="20" height="20" align="top">&nbsp;<a href="FMITest_VirtualLoops_MassSpringDamper.html#FMITest.VirtualLoops.MassSpringDamper.WithFMUsReference"
+>WithFMUsReference</a>
+</td>
+<td>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.VirtualLoops.Masse054ee5f80e66195renceS.png" alt="FMITest.VirtualLoops.MassSpringDamper.WithFMUs" width="20" height="20" align="top">&nbsp;<a href="FMITest_VirtualLoops_MassSpringDamper.html#FMITest.VirtualLoops.MassSpringDamper.WithFMUs"
+>WithFMUs</a>
+</td>
+<td>Solution with FMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.VirtualLoops.Massb8ea76641136d92fodelsS.png" alt="FMITest.VirtualLoops.MassSpringDamper.FMUModels" width="20" height="20" align="top">&nbsp;<a href="FMITest_VirtualLoops_MassSpringDamper_FMUModels.html#FMITest.VirtualLoops.MassSpringDamper.FMUModels"
+>FMUModels</a>
+</td>
+<td>For all models in this package an FMU must be generated</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Reference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.VirtualLoops.Masse054ee5f80e66195renceI.png" alt="FMITest.VirtualLoops.MassSpringDamper.Reference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.VirtualLoops.MassSpringDamper.Reference"></a><a href="FMITest_VirtualLoops_MassSpringDamper.html#FMITest.VirtualLoops.MassSpringDamper"
+>FMITest.VirtualLoops.MassSpringDamper</a>.Reference</h2>
+<p>
+<b>Reference solution in pure Modelica</b>
+<br>
+<br><img src="FMITest.VirtualLoops.Masse054ee5f80e66195renceD.png" alt="FMITest.VirtualLoops.MassSpringDamper.Reference">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Mass"
+>Mass</a></td><td>m</td><td>0.005</td><td>Mass of body connected to spring [kg]</td></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Position"
+>Position</a></td><td>x0</td><td>2</td><td>Initial position of mass over ground [m]</td></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.TranslationalSpringConstant"
+>TranslationalSpringConstant</a></td><td>c</td><td>1</td><td>Stiffness of serial spring [N/m]</td></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.TranslationalDampingConstant"
+>TranslationalDampingConstant</a></td><td>d</td><td>0.1</td><td>Damping facgtor of serial spring [N.s/m]</td></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Position"
+>Position</a></td><td>y0</td><td>1.5</td><td>Initial length of serial spring [m]</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> Reference <span style="color: #006400">&quot;Reference solution in pure Modelica&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+  <span style="color: blue">parameter </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Mass"
+>Modelica.SIunits.Mass</a> m=0.005 <span style="color: #006400">&quot;Mass of body connected to spring&quot;</span>;
+  <span style="color: blue">parameter </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Position"
+>Modelica.SIunits.Position</a> x0=2 <span style="color: #006400">
+    &quot;Initial position of mass over ground&quot;</span>;
+
+  <span style="color: blue">parameter </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.TranslationalSpringConstant"
+>Modelica.SIunits.TranslationalSpringConstant</a> c=1 <span style="color: #006400">
+    &quot;Stiffness of serial spring&quot;</span>;
+  <span style="color: blue">parameter </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.TranslationalDampingConstant"
+>Modelica.SIunits.TranslationalDampingConstant</a> d=0.1 <span style="color: #006400">
+    &quot;Damping facgtor of serial spring&quot;</span>;
+  <span style="color: blue">parameter </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Position"
+>Modelica.SIunits.Position</a> y0=1.5 <span style="color: #006400">&quot;Initial length of serial spring&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Position"
+>Modelica.SIunits.Position</a> x <span style="color: #006400">
+    &quot;Position at connection point of spring-damper system&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Velocity"
+>Modelica.SIunits.Velocity</a> v <span style="color: #006400">
+    &quot;Velocity at connection point of spring-damper system&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Force"
+>Modelica.SIunits.Force</a> F <span style="color: #006400">
+    &quot;Cut-Force at connection point of spring-damper system&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Position"
+>Modelica.SIunits.Position</a> y <span style="color: #006400">&quot;Length of serial spring&quot;</span>;
+
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Translational_Components.html#Modelica.Mechanics.Translational.Components.Fixed"
+>Modelica.Mechanics.Translational.Components.Fixed</a> fixed;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Translational_Components.html#Modelica.Mechanics.Translational.Components.Spring"
+>Modelica.Mechanics.Translational.Components.Spring</a> spring(
+    c=c,
+    s_rel0=y0,
+    s_rel(fixed=true, start=y0));
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Translational_Components.html#Modelica.Mechanics.Translational.Components.Damper"
+>Modelica.Mechanics.Translational.Components.Damper</a> damper(d=d);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Translational_Components.html#Modelica.Mechanics.Translational.Components.Mass"
+>Modelica.Mechanics.Translational.Components.Mass</a> mass(
+    m=m,
+    s(fixed=true, start=x0),
+    v(fixed=true, start=0));
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Translational_Sources.html#Modelica.Mechanics.Translational.Sources.Force"
+>Modelica.Mechanics.Translational.Sources.Force</a> force;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.RealExpression"
+>Modelica.Blocks.Sources.RealExpression</a> gravity(y=-m*9.81*x);
+<span style="color: blue">equation </span>
+  x = damper.flange_b.s;
+  v =<span style="color: red"> der</span>(x);
+  F = damper.flange_b.f;
+  y = spring.flange_b.s;
+  <span style="color: red">connect</span>(spring.flange_a, fixed.flange);
+  <span style="color: red">connect</span>(spring.flange_b, damper.flange_a);
+  <span style="color: red">connect</span>(mass.flange_a, damper.flange_b);
+  <span style="color: red">connect</span>(force.flange, mass.flange_b);
+  <span style="color: red">connect</span>(gravity.y, force.f);
+<span style="color: blue">end </span>Reference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUsReference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.VirtualLoops.Masse054ee5f80e66195renceI.png" alt="FMITest.VirtualLoops.MassSpringDamper.WithFMUsReference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.VirtualLoops.MassSpringDamper.WithFMUsReference"></a><a href="FMITest_VirtualLoops_MassSpringDamper.html#FMITest.VirtualLoops.MassSpringDamper"
+>FMITest.VirtualLoops.MassSpringDamper</a>.WithFMUsReference</h2>
+<p>
+<b>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</b>
+<br>
+<br><img src="FMITest.VirtualLoops.Mass96ffdb60ff59f12drenceD.png" alt="FMITest.VirtualLoops.MassSpringDamper.WithFMUsReference">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUsReference <span style="color: #006400">
+  &quot;Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+  <a href="FMITest_VirtualLoops_MassSpringDamper_FMUModels.html#FMITest.VirtualLoops.MassSpringDamper.FMUModels.SpringDamper"
+>FMUModels.SpringDamper</a> springDamper;
+  <a href="FMITest_VirtualLoops_MassSpringDamper_FMUModels.html#FMITest.VirtualLoops.MassSpringDamper.FMUModels.MassWithGravity"
+>FMUModels.MassWithGravity</a> massWithGravity;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(massWithGravity.x, springDamper.x);
+  <span style="color: red">connect</span>(massWithGravity.v, springDamper.v);
+  <span style="color: red">connect</span>(springDamper.f, massWithGravity.f);
+<span style="color: blue">end </span>WithFMUsReference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUs<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.VirtualLoops.Masse054ee5f80e66195renceI.png" alt="FMITest.VirtualLoops.MassSpringDamper.WithFMUs" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.VirtualLoops.MassSpringDamper.WithFMUs"></a><a href="FMITest_VirtualLoops_MassSpringDamper.html#FMITest.VirtualLoops.MassSpringDamper"
+>FMITest.VirtualLoops.MassSpringDamper</a>.WithFMUs</h2>
+<p>
+<b>Solution with FMUs</b>
+<br>
+<br><img src="FMITest.VirtualLoops.Mass96ffdb60ff59f12drenceD.png" alt="FMITest.VirtualLoops.MassSpringDamper.WithFMUs">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUs <span style="color: #006400">&quot;Solution with FMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+  <a href="FMITest_VirtualLoops_MassSpringDamper_FMUModels.html#FMITest.VirtualLoops.MassSpringDamper.FMUModels.SpringDamper"
+>FMUModels.SpringDamper</a> springDamper;
+  <a href="FMITest_VirtualLoops_MassSpringDamper_FMUModels.html#FMITest.VirtualLoops.MassSpringDamper.FMUModels.MassWithGravity"
+>FMUModels.MassWithGravity</a> massWithGravity;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(massWithGravity.x, springDamper.x);
+  <span style="color: red">connect</span>(massWithGravity.v, springDamper.v);
+  <span style="color: red">connect</span>(springDamper.f, massWithGravity.f);
+<span style="color: blue">end </span>WithFMUs;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Fri Apr 25 16:23:01 2014.
+</address>
+</body>
+</html>

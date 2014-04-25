@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>FMITest.MixedSystems.DiscontinuousMixedSystem.Internal</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="&quot;Utility models needed in this test model&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Internal<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="FMITest.MixedSystems.DiscontinuousMixedSystem.Internal"></a><a href="FMITest_MixedSystems_DiscontinuousMixedSystem.html#FMITest.MixedSystems.DiscontinuousMixedSystem"
+>FMITest.MixedSystems.DiscontinuousMixedSystem</a>.Internal</h2>
+<p>
+<b>Utility models needed in this test model</b><br>
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons_Package.html#Modelica.Icons.Package"
+>Modelica.Icons.Package</a> (Icon for standard packages).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="FMITest.MixedSystems.Disc035db5168cf97ea2iencyS.png" alt="FMITest.MixedSystems.DiscontinuousMixedSystem.Internal.GearWithBadEfficiency" width="20" height="20" align="top">&nbsp;<a href="FMITest_MixedSystems_DiscontinuousMixedSystem_Internal.html#FMITest.MixedSystems.DiscontinuousMixedSystem.Internal.GearWithBadEfficiency"
+>GearWithBadEfficiency</a>
+</td>
+<td>Model of a gear with gear efficiency that has bad numeric properties (do not model gear efficiency in this way!)</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE GearWithBadEfficiency<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.MixedSystems.Disc035db5168cf97ea2iencyI.png" alt="FMITest.MixedSystems.DiscontinuousMixedSystem.Internal.GearWithBadEfficiency" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.MixedSystems.DiscontinuousMixedSystem.Internal.GearWithBadEfficiency"></a><a href="FMITest_MixedSystems_DiscontinuousMixedSystem_Internal.html#FMITest.MixedSystems.DiscontinuousMixedSystem.Internal"
+>FMITest.MixedSystems.DiscontinuousMixedSystem.Internal</a>.GearWithBadEfficiency</h2>
+<p>
+<b>Model of a gear with gear efficiency that has bad numeric properties (do not model gear efficiency in this way!)</b>
+<br>
+<br><img src="FMITest.MixedSystems.Disc035db5168cf97ea2iencyD.png" alt="FMITest.MixedSystems.DiscontinuousMixedSystem.Internal.GearWithBadEfficiency">
+</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Real</td><td>ratio</td><td>1</td><td>Gear ratio</td></tr>
+<tr><td>Real</td><td>eta</td><td>1.0</td><td>Effciency of gear box</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Interfaces.html#Modelica.Mechanics.Rotational.Interfaces.Flange_a"
+>Flange_a</a></td><td>flange_a</td><td>&nbsp;</td></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Interfaces.html#Modelica.Mechanics.Rotational.Interfaces.Flange_b"
+>Flange_b</a></td><td>flange_b</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> GearWithBadEfficiency <span style="color: #006400">
+  &quot;Model of a gear with gear efficiency that has bad numeric properties (do not model gear efficiency in this way!)&quot;</span>
+
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Interfaces.html#Modelica.Mechanics.Rotational.Interfaces.Flange_a"
+>Modelica.Mechanics.Rotational.Interfaces.Flange_a</a> flange_a;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Interfaces.html#Modelica.Mechanics.Rotational.Interfaces.Flange_b"
+>Modelica.Mechanics.Rotational.Interfaces.Flange_b</a> flange_b;
+  <span style="color: blue">parameter </span>Real ratio=1 <span style="color: #006400">&quot;Gear ratio&quot;</span>;
+  <span style="color: blue">parameter </span>Real eta(
+    min=0.0,
+    max=1.0) = 1.0 <span style="color: #006400">&quot;Effciency of gear box&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Power"
+>Modelica.SIunits.Power</a> power;
+  Real eff;
+<span style="color: blue">equation </span>
+  flange_a.phi = ratio*flange_b.phi;
+  power = flange_b.tau*<span style="color: red">der</span>(flange_b.phi);
+  eff = <span style="color: blue">if </span>power &gt; 0<span style="color: blue"> then </span>eta<span style="color: blue"> else </span>1/eta;
+  0 = ratio*flange_a.tau + eff*flange_b.tau;
+<span style="color: blue">end </span>GearWithBadEfficiency;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Fri Apr 25 16:23:26 2014.
+</address>
+</body>
+</html>

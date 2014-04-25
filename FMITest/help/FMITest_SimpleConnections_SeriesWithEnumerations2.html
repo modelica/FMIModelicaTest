@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>FMITest.SimpleConnections.SeriesWithEnumerations2</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="&quot;Simple series connection of two FMUs with envolved enumerations from the Modelica.Electrical.Digital library that are propagated and are time/value transformed&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE SeriesWithEnumerations2<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="FMITest.SimpleConnections.SeriesWithEnumerations2"></a><a href="FMITest_SimpleConnections.html#FMITest.SimpleConnections"
+>FMITest.SimpleConnections</a>.SeriesWithEnumerations2</h2>
+<p>
+<b>Simple series connection of two FMUs with envolved enumerations from the Modelica.Electrical.Digital library that are propagated and are time/value transformed</b><br>
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons_ExamplesPackage.html#Modelica.Icons.ExamplesPackage"
+>Modelica.Icons.ExamplesPackage</a> (Icon for packages containing runnable examples).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="FMITest.SimpleConnectionsd1fd78b1957da586renceS.png" alt="FMITest.SimpleConnections.SeriesWithEnumerations2.Reference" width="20" height="20" align="top">&nbsp;<a href="FMITest_SimpleConnections_SeriesWithEnumerations2.html#FMITest.SimpleConnections.SeriesWithEnumerations2.Reference"
+>Reference</a>
+</td>
+<td>Reference solution in pure Modelica</td>
+</tr>
+<tr>
+<td><img src="FMITest.SimpleConnectionsd1fd78b1957da586renceS.png" alt="FMITest.SimpleConnections.SeriesWithEnumerations2.WithFMUsReference" width="20" height="20" align="top">&nbsp;<a href="FMITest_SimpleConnections_SeriesWithEnumerations2.html#FMITest.SimpleConnections.SeriesWithEnumerations2.WithFMUsReference"
+>WithFMUsReference</a>
+</td>
+<td>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.SimpleConnectionsd1fd78b1957da586renceS.png" alt="FMITest.SimpleConnections.SeriesWithEnumerations2.WithFMUs" width="20" height="20" align="top">&nbsp;<a href="FMITest_SimpleConnections_SeriesWithEnumerations2.html#FMITest.SimpleConnections.SeriesWithEnumerations2.WithFMUs"
+>WithFMUs</a>
+</td>
+<td>Solution with FMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.SimpleConnectionsaa9300b604ad1d3codelsS.png" alt="FMITest.SimpleConnections.SeriesWithEnumerations2.FMUModels" width="20" height="20" align="top">&nbsp;<a href="FMITest_SimpleConnections_SeriesWithEnumerations2_FMUModels.html#FMITest.SimpleConnections.SeriesWithEnumerations2.FMUModels"
+>FMUModels</a>
+</td>
+<td>For all models in this package an FMU must be generated</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Reference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.SimpleConnectionsd1fd78b1957da586renceI.png" alt="FMITest.SimpleConnections.SeriesWithEnumerations2.Reference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.SimpleConnections.SeriesWithEnumerations2.Reference"></a><a href="FMITest_SimpleConnections_SeriesWithEnumerations2.html#FMITest.SimpleConnections.SeriesWithEnumerations2"
+>FMITest.SimpleConnections.SeriesWithEnumerations2</a>.Reference</h2>
+<p>
+<b>Reference solution in pure Modelica</b>
+<br>
+<br><img src="FMITest.SimpleConnectionsd1fd78b1957da586renceD.png" alt="FMITest.SimpleConnections.SeriesWithEnumerations2.Reference">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> Reference <span style="color: #006400">&quot;Reference solution in pure Modelica&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Electrical_Digital_Sources.html#Modelica.Electrical.Digital.Sources.Pulse"
+>Modelica.Electrical.Digital.Sources.Pulse</a> pulse(
+    width=40,
+    period=0.5,
+    startTime=0.1,
+    pulse=Modelica.Electrical.Digital.Interfaces.Logic.'1',
+    quiet=Modelica.Electrical.Digital.Interfaces.Logic.'0',
+    nperiod=-1);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Electrical_Digital_Gates.html#Modelica.Electrical.Digital.Gates.InvGate"
+>Modelica.Electrical.Digital.Gates.InvGate</a> invGate1(
+    tLH=0.1,
+    tHL=0.1,
+    G2(y(start=invGate1.y0,fixed=true)));
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Electrical_Digital_Gates.html#Modelica.Electrical.Digital.Gates.InvGate"
+>Modelica.Electrical.Digital.Gates.InvGate</a> invGate2(
+    tLH=0.1,
+    tHL=0.1,
+    G2(y(start=invGate2.y0,fixed=true)));
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(pulse.y, invGate1.x);
+  <span style="color: red">connect</span>(invGate1.y, invGate2.x);
+<span style="color: blue">end </span>Reference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUsReference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.SimpleConnectionsd1fd78b1957da586renceI.png" alt="FMITest.SimpleConnections.SeriesWithEnumerations2.WithFMUsReference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.SimpleConnections.SeriesWithEnumerations2.WithFMUsReference"></a><a href="FMITest_SimpleConnections_SeriesWithEnumerations2.html#FMITest.SimpleConnections.SeriesWithEnumerations2"
+>FMITest.SimpleConnections.SeriesWithEnumerations2</a>.WithFMUsReference</h2>
+<p>
+<b>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</b>
+<br>
+<br><img src="FMITest.SimpleConnections30b8f2f26461e238renceD.png" alt="FMITest.SimpleConnections.SeriesWithEnumerations2.WithFMUsReference">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUsReference <span style="color: #006400">
+  &quot;Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Electrical_Digital_Sources.html#Modelica.Electrical.Digital.Sources.Pulse"
+>Modelica.Electrical.Digital.Sources.Pulse</a> pulse(
+    width=40,
+    period=0.5,
+    startTime=0.1,
+    pulse=Modelica.Electrical.Digital.Interfaces.Logic.'1',
+    quiet=Modelica.Electrical.Digital.Interfaces.Logic.'0',
+    nperiod=-1);
+  <a href="FMITest_SimpleConnections_SeriesWithEnumerations2_FMUModels.html#FMITest.SimpleConnections.SeriesWithEnumerations2.FMUModels.InvGate1"
+>FMUModels.InvGate1</a> invGate1;
+  <a href="FMITest_SimpleConnections_SeriesWithEnumerations2_FMUModels.html#FMITest.SimpleConnections.SeriesWithEnumerations2.FMUModels.InvGate2"
+>FMUModels.InvGate2</a> invGate2;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(pulse.y, invGate1.x);
+  <span style="color: red">connect</span>(invGate1.y, invGate2.x);
+<span style="color: blue">end </span>WithFMUsReference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUs<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.SimpleConnectionsd1fd78b1957da586renceI.png" alt="FMITest.SimpleConnections.SeriesWithEnumerations2.WithFMUs" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.SimpleConnections.SeriesWithEnumerations2.WithFMUs"></a><a href="FMITest_SimpleConnections_SeriesWithEnumerations2.html#FMITest.SimpleConnections.SeriesWithEnumerations2"
+>FMITest.SimpleConnections.SeriesWithEnumerations2</a>.WithFMUs</h2>
+<p>
+<b>Solution with FMUs</b>
+<br>
+<br><img src="FMITest.SimpleConnections30b8f2f26461e238renceD.png" alt="FMITest.SimpleConnections.SeriesWithEnumerations2.WithFMUs">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUs <span style="color: #006400">&quot;Solution with FMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Electrical_Digital_Sources.html#Modelica.Electrical.Digital.Sources.Pulse"
+>Modelica.Electrical.Digital.Sources.Pulse</a> pulse(
+    width=40,
+    period=0.5,
+    startTime=0.1,
+    pulse=Modelica.Electrical.Digital.Interfaces.Logic.'1',
+    quiet=Modelica.Electrical.Digital.Interfaces.Logic.'0',
+    nperiod=-1);
+  <a href="FMITest_SimpleConnections_SeriesWithEnumerations2_FMUModels.html#FMITest.SimpleConnections.SeriesWithEnumerations2.FMUModels.InvGate1"
+>FMUModels.InvGate1</a> invGate1;
+  <a href="FMITest_SimpleConnections_SeriesWithEnumerations2_FMUModels.html#FMITest.SimpleConnections.SeriesWithEnumerations2.FMUModels.InvGate2"
+>FMUModels.InvGate2</a> invGate2;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(pulse.y, invGate1.x);
+  <span style="color: red">connect</span>(invGate1.y, invGate2.x);
+<span style="color: blue">end </span>WithFMUs;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Fri Apr 25 16:22:59 2014.
+</address>
+</body>
+</html>

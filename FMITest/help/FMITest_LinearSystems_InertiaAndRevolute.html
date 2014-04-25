@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>FMITest.LinearSystems.InertiaAndRevolute</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="&quot;Test of the connection of a 1-dim. rotational inertia with a 3-dim. multi-body revolute joint leading to a linear system of equations&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE InertiaAndRevolute<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="FMITest.LinearSystems.InertiaAndRevolute"></a><a href="FMITest_LinearSystems.html#FMITest.LinearSystems"
+>FMITest.LinearSystems</a>.InertiaAndRevolute</h2>
+<p>
+<b>Test of the connection of a 1-dim. rotational inertia with a 3-dim. multi-body revolute joint leading to a linear system of equations</b><br>
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons_ExamplesPackage.html#Modelica.Icons.ExamplesPackage"
+>Modelica.Icons.ExamplesPackage</a> (Icon for packages containing runnable examples).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="FMITest.LinearSystems.Ine4bc3c591118c908arenceS.png" alt="FMITest.LinearSystems.InertiaAndRevolute.Reference" width="20" height="20" align="top">&nbsp;<a href="FMITest_LinearSystems_InertiaAndRevolute.html#FMITest.LinearSystems.InertiaAndRevolute.Reference"
+>Reference</a>
+</td>
+<td>Reference solution in pure Modelica</td>
+</tr>
+<tr>
+<td><img src="FMITest.LinearSystems.Ine4bc3c591118c908arenceS.png" alt="FMITest.LinearSystems.InertiaAndRevolute.WithFMUsReference" width="20" height="20" align="top">&nbsp;<a href="FMITest_LinearSystems_InertiaAndRevolute.html#FMITest.LinearSystems.InertiaAndRevolute.WithFMUsReference"
+>WithFMUsReference</a>
+</td>
+<td>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.LinearSystems.Ine4bc3c591118c908arenceS.png" alt="FMITest.LinearSystems.InertiaAndRevolute.WithFMUs" width="20" height="20" align="top">&nbsp;<a href="FMITest_LinearSystems_InertiaAndRevolute.html#FMITest.LinearSystems.InertiaAndRevolute.WithFMUs"
+>WithFMUs</a>
+</td>
+<td>Solution with FMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.LinearSystems.Ine24594d96805c2830odelsS.png" alt="FMITest.LinearSystems.InertiaAndRevolute.FMUModels" width="20" height="20" align="top">&nbsp;<a href="FMITest_LinearSystems_InertiaAndRevolute_FMUModels.html#FMITest.LinearSystems.InertiaAndRevolute.FMUModels"
+>FMUModels</a>
+</td>
+<td>For all models in this package an FMU must be generated</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Reference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.LinearSystems.Ine4bc3c591118c908arenceI.png" alt="FMITest.LinearSystems.InertiaAndRevolute.Reference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.LinearSystems.InertiaAndRevolute.Reference"></a><a href="FMITest_LinearSystems_InertiaAndRevolute.html#FMITest.LinearSystems.InertiaAndRevolute"
+>FMITest.LinearSystems.InertiaAndRevolute</a>.Reference</h2>
+<p>
+<b>Reference solution in pure Modelica</b>
+<br>
+<br><img src="FMITest.LinearSystems.Ine4bc3c591118c908arenceD.png" alt="FMITest.LinearSystems.InertiaAndRevolute.Reference">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> Reference <span style="color: #006400">&quot;Reference solution in pure Modelica&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Sources.html#Modelica.Mechanics.Rotational.Sources.Torque"
+>Modelica.Mechanics.Rotational.Sources.Torque</a> torque(useSupport=true);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Sine"
+>Modelica.Blocks.Sources.Sine</a> sine(freqHz=1, amplitude=0.5);
+  <span style="color: blue">inner </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_MultiBody.html#Modelica.Mechanics.MultiBody.World"
+>Modelica.Mechanics.MultiBody.World</a> world(gravityType=Modelica.Mechanics.MultiBody.Types.GravityTypes.UniformGravity);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_MultiBody_Joints.html#Modelica.Mechanics.MultiBody.Joints.Revolute"
+>Modelica.Mechanics.MultiBody.Joints.Revolute</a> rev(
+    n={0,0,1},
+    useAxisFlange=true,
+    phi(fixed=true),
+    w(fixed=true));
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Damper"
+>Modelica.Mechanics.Rotational.Components.Damper</a> damper(d=0.1);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_MultiBody_Parts.html#Modelica.Mechanics.MultiBody.Parts.Body"
+>Modelica.Mechanics.MultiBody.Parts.Body</a> body(m=1.0, r_CM={0.5,0,0});
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Inertia"
+>Modelica.Mechanics.Rotational.Components.Inertia</a> inertia(
+    phi(start=0),
+    w(start=0),
+    J=0.05);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Fixed"
+>Modelica.Mechanics.Rotational.Components.Fixed</a> fixed;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.IdealGear"
+>Modelica.Mechanics.Rotational.Components.IdealGear</a> idealGear(useSupport=
+        true, ratio=3);
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(sine.y, torque.tau);
+  <span style="color: red">connect</span>(world.frame_b, rev.frame_a);
+  <span style="color: red">connect</span>(body.frame_a, rev.frame_b);
+  <span style="color: red">connect</span>(fixed.flange, torque.support);
+  <span style="color: red">connect</span>(fixed.flange, damper.flange_b);
+  <span style="color: red">connect</span>(fixed.flange, idealGear.support);
+  <span style="color: red">connect</span>(damper.flange_a, idealGear.flange_a);
+  <span style="color: red">connect</span>(torque.flange, idealGear.flange_a);
+  <span style="color: red">connect</span>(idealGear.flange_b, inertia.flange_a);
+  <span style="color: red">connect</span>(inertia.flange_b, rev.axis);
+<span style="color: blue">end </span>Reference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUsReference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.LinearSystems.Ine4bc3c591118c908arenceI.png" alt="FMITest.LinearSystems.InertiaAndRevolute.WithFMUsReference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.LinearSystems.InertiaAndRevolute.WithFMUsReference"></a><a href="FMITest_LinearSystems_InertiaAndRevolute.html#FMITest.LinearSystems.InertiaAndRevolute"
+>FMITest.LinearSystems.InertiaAndRevolute</a>.WithFMUsReference</h2>
+<p>
+<b>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</b>
+<br>
+<br><img src="FMITest.LinearSystems.Ine3407abd29568ee9crenceD.png" alt="FMITest.LinearSystems.InertiaAndRevolute.WithFMUsReference">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUsReference <span style="color: #006400">
+  &quot;Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+
+  <a href="FMITest_LinearSystems_InertiaAndRevolute_FMUModels.html#FMITest.LinearSystems.InertiaAndRevolute.FMUModels.InverseDriveTrain"
+>FMUModels.InverseDriveTrain</a> inverseDriveTrain(J=0.05);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Sine"
+>Modelica.Blocks.Sources.Sine</a> sine(freqHz=1, amplitude=0.5);
+  <a href="FMITest_LinearSystems_InertiaAndRevolute_FMUModels.html#FMITest.LinearSystems.InertiaAndRevolute.FMUModels.DirectPendulum"
+>FMUModels.DirectPendulum</a> directPendulum;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(sine.y, inverseDriveTrain.driveTorque);
+  <span style="color: red">connect</span>(inverseDriveTrain.tau, directPendulum.tau);
+  <span style="color: red">connect</span>(directPendulum.a, inverseDriveTrain.a);
+  <span style="color: red">connect</span>(directPendulum.w, inverseDriveTrain.w);
+  <span style="color: red">connect</span>(directPendulum.phi, inverseDriveTrain.phi);
+<span style="color: blue">end </span>WithFMUsReference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUs<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.LinearSystems.Ine4bc3c591118c908arenceI.png" alt="FMITest.LinearSystems.InertiaAndRevolute.WithFMUs" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.LinearSystems.InertiaAndRevolute.WithFMUs"></a><a href="FMITest_LinearSystems_InertiaAndRevolute.html#FMITest.LinearSystems.InertiaAndRevolute"
+>FMITest.LinearSystems.InertiaAndRevolute</a>.WithFMUs</h2>
+<p>
+<b>Solution with FMUs</b>
+<br>
+<br><img src="FMITest.LinearSystems.Ine3407abd29568ee9crenceD.png" alt="FMITest.LinearSystems.InertiaAndRevolute.WithFMUs">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUs <span style="color: #006400">&quot;Solution with FMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+
+  <a href="FMITest_LinearSystems_InertiaAndRevolute_FMUModels.html#FMITest.LinearSystems.InertiaAndRevolute.FMUModels.InverseDriveTrain"
+>FMUModels.InverseDriveTrain</a> inverseDriveTrain(J=0.05);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Sine"
+>Modelica.Blocks.Sources.Sine</a> sine(freqHz=1, amplitude=0.5);
+  <a href="FMITest_LinearSystems_InertiaAndRevolute_FMUModels.html#FMITest.LinearSystems.InertiaAndRevolute.FMUModels.DirectPendulum"
+>FMUModels.DirectPendulum</a> directPendulum;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(sine.y, inverseDriveTrain.driveTorque);
+  <span style="color: red">connect</span>(inverseDriveTrain.tau, directPendulum.tau);
+  <span style="color: red">connect</span>(directPendulum.a, inverseDriveTrain.a);
+  <span style="color: red">connect</span>(directPendulum.w, inverseDriveTrain.w);
+  <span style="color: red">connect</span>(directPendulum.phi, inverseDriveTrain.phi);
+<span style="color: blue">end </span>WithFMUs;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Fri Apr 25 16:23:08 2014.
+</address>
+</body>
+</html>

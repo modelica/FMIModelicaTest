@@ -1,0 +1,500 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>FMITest.Utilities</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="&quot;Utility models used by the component models&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Utilities<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="FMITest.Utilities"></a><a href="FMITest.html#FMITest"
+>FMITest</a>.Utilities</h2>
+<p>
+<b>Utility models used by the component models</b><br>
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons_Package.html#Modelica.Icons.Package"
+>Modelica.Icons.Package</a> (Icon for standard packages).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="FMITest.Utilities.IconsS.png" alt="FMITest.Utilities.Icons" width="20" height="20" align="top">&nbsp;<a href="FMITest_Utilities_Icons.html#FMITest.Utilities.Icons"
+>Icons</a>
+</td>
+<td>Additional icons used in package FMITest</td>
+</tr>
+<tr>
+<td><img src="FMITest.Utilities.PinToIS.png" alt="FMITest.Utilities.PinToI" width="20" height="20" align="top">&nbsp;<a href="FMITest_Utilities.html#FMITest.Utilities.PinToI"
+>PinToI</a>
+</td>
+<td>Adaptor for a pin with voltage as input and current as output</td>
+</tr>
+<tr>
+<td><img src="FMITest.Utilities.PinToVS.png" alt="FMITest.Utilities.PinToV" width="20" height="20" align="top">&nbsp;<a href="FMITest_Utilities.html#FMITest.Utilities.PinToV"
+>PinToV</a>
+</td>
+<td>Adaptor for a pin with current as input and voltage as output</td>
+</tr>
+<tr>
+<td><img src="FMITest.Utilities.RotFlangeToPhiS.png" alt="FMITest.Utilities.RotFlangeToPhi" width="20" height="20" align="top">&nbsp;<a href="FMITest_Utilities.html#FMITest.Utilities.RotFlangeToPhi"
+>RotFlangeToPhi</a>
+</td>
+<td>Adaptor for a Rotational flange with angle, speed, and acceleration as outputs</td>
+</tr>
+<tr>
+<td><img src="FMITest.Utilities.RotFlangeToTauS.png" alt="FMITest.Utilities.RotFlangeToTau" width="20" height="20" align="top">&nbsp;<a href="FMITest_Utilities.html#FMITest.Utilities.RotFlangeToTau"
+>RotFlangeToTau</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="FMITest.Utilities.TransFlangeToSS.png" alt="FMITest.Utilities.TransFlangeToS" width="20" height="20" align="top">&nbsp;<a href="FMITest_Utilities.html#FMITest.Utilities.TransFlangeToS"
+>TransFlangeToS</a>
+</td>
+<td>Adaptor for a Translational flange with position, speed, and acceleration as outputs</td>
+</tr>
+<tr>
+<td><img src="FMITest.Utilities.TransFlangeToFS.png" alt="FMITest.Utilities.TransFlangeToF" width="20" height="20" align="top">&nbsp;<a href="FMITest_Utilities.html#FMITest.Utilities.TransFlangeToF"
+>TransFlangeToF</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><a href="FMITest_Utilities.html#FMITest.Utilities.InquireInitializationEnd"
+>InquireInitializationEnd</a>
+</td>
+<td>Modelica code to inquire when fmiCompletedInitialization has to be called in a Modelica model</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE PinToI<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.Utilities.PinToII.png" alt="FMITest.Utilities.PinToI" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.Utilities.PinToI"></a><a href="FMITest_Utilities.html#FMITest.Utilities"
+>FMITest.Utilities</a>.PinToI</h2>
+<p>
+<b>Adaptor for a pin with voltage as input and current as output</b>
+<br>
+<br><img src="FMITest.Utilities.PinToID.png" alt="FMITest.Utilities.PinToI">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="FMITest_Utilities_Icons.html#FMITest.Utilities.Icons.PartialElectricalAdaptorIcon"
+>FMITest.Utilities.Icons.PartialElectricalAdaptorIcon</a> (Basic graphical layout of an adaptor block from a physical to input/output connectors).</p>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Electrical_Analog_Interfaces.html#Modelica.Electrical.Analog.Interfaces.Pin"
+>Pin</a></td><td>pin</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>v</td><td>Potential at the pin as provided from the outside [V]</td></tr>
+<tr><td>output <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>i</td><td>Current flowing in to the pin as provided to the outside [A]</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> PinToI <span style="color: #006400">
+  &quot;Adaptor for a pin with voltage as input and current as output&quot;</span>
+  <span style="color: blue">extends </span><a href="FMITest_Utilities_Icons.html#FMITest.Utilities.Icons.PartialElectricalAdaptorIcon"
+>FMITest.Utilities.Icons.PartialElectricalAdaptorIcon</a>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Electrical_Analog_Interfaces.html#Modelica.Electrical.Analog.Interfaces.Pin"
+>Modelica.Electrical.Analog.Interfaces.Pin</a> pin;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> v(unit=&quot;V&quot;) <span style="color: #006400">
+    &quot;Potential at the pin as provided from the outside&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> i(unit=&quot;A&quot;) <span style="color: #006400">
+    &quot;Current flowing in to the pin as provided to the outside&quot;</span>;
+<span style="color: blue">equation </span>
+  pin.v = v;
+  i = -pin.i;
+
+<span style="color: blue">end </span>PinToI;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE PinToV<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.Utilities.PinToVI.png" alt="FMITest.Utilities.PinToV" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.Utilities.PinToV"></a><a href="FMITest_Utilities.html#FMITest.Utilities"
+>FMITest.Utilities</a>.PinToV</h2>
+<p>
+<b>Adaptor for a pin with current as input and voltage as output</b>
+<br>
+<br><img src="FMITest.Utilities.PinToVD.png" alt="FMITest.Utilities.PinToV">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="FMITest_Utilities_Icons.html#FMITest.Utilities.Icons.PartialElectricalAdaptorIcon"
+>FMITest.Utilities.Icons.PartialElectricalAdaptorIcon</a> (Basic graphical layout of an adaptor block from a physical to input/output connectors).</p>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Electrical_Analog_Interfaces.html#Modelica.Electrical.Analog.Interfaces.NegativePin"
+>NegativePin</a></td><td>pin</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>i</td><td>Current flowing in to the pin as provided from the outside [A]</td></tr>
+<tr><td>output <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>v</td><td>Potential at the pin as provided to the outside [V]</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> PinToV <span style="color: #006400">
+  &quot;Adaptor for a pin with current as input and voltage as output&quot;</span>
+  <span style="color: blue">extends </span><a href="FMITest_Utilities_Icons.html#FMITest.Utilities.Icons.PartialElectricalAdaptorIcon"
+>FMITest.Utilities.Icons.PartialElectricalAdaptorIcon</a>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Electrical_Analog_Interfaces.html#Modelica.Electrical.Analog.Interfaces.NegativePin"
+>Modelica.Electrical.Analog.Interfaces.NegativePin</a> pin;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> i(unit=&quot;A&quot;) <span style="color: #006400">
+    &quot;Current flowing in to the pin as provided from the outside&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> v(unit=&quot;V&quot;) <span style="color: #006400">
+    &quot;Potential at the pin as provided to the outside&quot;</span>;
+<span style="color: blue">equation </span>
+  pin.i = i;
+  v = pin.v;
+
+<span style="color: blue">end </span>PinToV;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE RotFlangeToPhi<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.Utilities.RotFlangeToPhiI.png" alt="FMITest.Utilities.RotFlangeToPhi" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.Utilities.RotFlangeToPhi"></a><a href="FMITest_Utilities.html#FMITest.Utilities"
+>FMITest.Utilities</a>.RotFlangeToPhi</h2>
+<p>
+<b>Adaptor for a Rotational flange with angle, speed, and acceleration as outputs</b>
+<br>
+<br><img src="FMITest.Utilities.RotFlangeToPhiD.png" alt="FMITest.Utilities.RotFlangeToPhi">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="FMITest_Utilities_Icons.html#FMITest.Utilities.Icons.PartialMechanicalAdaptorIcon"
+>FMITest.Utilities.Icons.PartialMechanicalAdaptorIcon</a>.</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Boolean</td><td>enable_a</td><td>true</td><td>Enable the output connector a</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Interfaces.html#Modelica.Mechanics.Rotational.Interfaces.Flange_a"
+>Flange_a</a></td><td>flange</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>phi</td><td>Flange moves with angle phi due to torque tau [rad]</td></tr>
+<tr><td>output <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>w</td><td>Flange moves with speed w due to torque tau [rad/s]</td></tr>
+<tr><td>output <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>a</td><td>Flange moves with angular acceleration a due to torque tau [rad/s2]</td></tr>
+<tr><td>input <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>tau</td><td>Torque to drive the flange [N.m]</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> RotFlangeToPhi <span style="color: #006400">
+  &quot;Adaptor for a Rotational flange with angle, speed, and acceleration as outputs&quot;</span>
+  <span style="color: blue">extends </span><a href="FMITest_Utilities_Icons.html#FMITest.Utilities.Icons.PartialMechanicalAdaptorIcon"
+>FMITest.Utilities.Icons.PartialMechanicalAdaptorIcon</a>;
+  <span style="color: blue">parameter </span>Boolean enable_a=true <span style="color: #006400">&quot;Enable the output connector a&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Interfaces.html#Modelica.Mechanics.Rotational.Interfaces.Flange_a"
+>Modelica.Mechanics.Rotational.Interfaces.Flange_a</a> flange;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> phi(unit=&quot;rad&quot;) <span style="color: #006400">
+    &quot;Flange moves with angle phi due to torque tau&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> w(unit=&quot;rad/s&quot;) <span style="color: #006400">
+    &quot;Flange moves with speed w due to torque tau&quot;</span>;
+
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> a(unit=&quot;rad/s2&quot;) <span style="color: blue">if </span>enable_a <span style="color: #006400">
+    &quot;Flange moves with angular acceleration a due to torque tau&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> tau(unit=&quot;N.m&quot;) <span style="color: #006400">
+    &quot;Torque to drive the flange&quot;</span>;
+<span style="color: blue">protected </span>
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> a_internal <span style="color: #006400">
+    &quot;Needed to connect to conditional connector&quot;</span>;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(a, a_internal);
+  <span style="color: blue">if </span><span style="color: blue">not </span>enable_a<span style="color: blue"> then</span>
+    a_internal = 0.0;
+  <span style="color: blue">end if</span>;
+  phi = flange.phi;
+  w =<span style="color: red"> der</span>(phi);
+  <span style="color: blue">if </span>enable_a<span style="color: blue"> then</span>
+    a_internal =<span style="color: red"> der</span>(w);
+  <span style="color: blue">end if</span>;
+  flange.tau = tau;
+<span style="color: blue">end </span>RotFlangeToPhi;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE RotFlangeToTau<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.Utilities.RotFlangeToTauI.png" alt="FMITest.Utilities.RotFlangeToTau" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.Utilities.RotFlangeToTau"></a><a href="FMITest_Utilities.html#FMITest.Utilities"
+>FMITest.Utilities</a>.RotFlangeToTau</h2>
+<p>
+<br><img src="FMITest.Utilities.RotFlangeToTauD.png" alt="FMITest.Utilities.RotFlangeToTau">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="FMITest_Utilities_Icons.html#FMITest.Utilities.Icons.PartialMechanicalAdaptorIcon"
+>Icons.PartialMechanicalAdaptorIcon</a>.</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Boolean</td><td>enable_a</td><td>true</td><td>Enable the output connector a</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Interfaces.html#Modelica.Mechanics.Rotational.Interfaces.Flange_b"
+>Flange_b</a></td><td>flange</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>phi</td><td>Angle to drive the flange [rad]</td></tr>
+<tr><td>input <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>w</td><td>Speed to drive the flange [rad/s]</td></tr>
+<tr><td>input <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>a</td><td>Angular acceleration to drive the flange [rad/s2]</td></tr>
+<tr><td>output <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>tau</td><td>Torque needed to drive the flange according to phi, w, a [N.m]</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> RotFlangeToTau
+  <span style="color: blue">extends </span><a href="FMITest_Utilities_Icons.html#FMITest.Utilities.Icons.PartialMechanicalAdaptorIcon"
+>Icons.PartialMechanicalAdaptorIcon</a>;
+  <span style="color: blue">parameter </span>Boolean enable_a=true <span style="color: #006400">&quot;Enable the output connector a&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Interfaces.html#Modelica.Mechanics.Rotational.Interfaces.Flange_b"
+>Modelica.Mechanics.Rotational.Interfaces.Flange_b</a> flange;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> phi(unit=&quot;rad&quot;) <span style="color: #006400">
+    &quot;Angle to drive the flange&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> w(unit=&quot;rad/s&quot;) <span style="color: #006400">
+    &quot;Speed to drive the flange&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> a(unit=&quot;rad/s2&quot;) <span style="color: blue">if </span>enable_a <span style="color: #006400">
+    &quot;Angular acceleration to drive the flange&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> tau(unit=&quot;N.m&quot;) <span style="color: #006400">
+    &quot;Torque needed to drive the flange according to phi, w, a&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Sources.html#Modelica.Mechanics.Rotational.Sources.Move"
+>Modelica.Mechanics.Rotational.Sources.Move</a> move;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Routing.html#Modelica.Blocks.Routing.Multiplex3"
+>Modelica.Blocks.Routing.Multiplex3</a> multiplex3;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Sensors.html#Modelica.Mechanics.Rotational.Sensors.TorqueSensor"
+>Modelica.Mechanics.Rotational.Sensors.TorqueSensor</a> torqueSensor;
+
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> const(<span style="color: blue">final </span>k=0) <span style="color: blue">if </span><span style="color: blue">not </span>enable_a;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(multiplex3.y, move.u);
+  <span style="color: red">connect</span>(phi, multiplex3.u1[1]);
+  <span style="color: red">connect</span>(w, multiplex3.u2[1]);
+  <span style="color: red">connect</span>(a, multiplex3.u3[1]);
+  <span style="color: red">connect</span>(flange, torqueSensor.flange_b);
+  <span style="color: red">connect</span>(move.flange, torqueSensor.flange_a);
+  <span style="color: red">connect</span>(torqueSensor.tau, tau);
+  <span style="color: red">connect</span>(const.y, multiplex3.u3[1]);
+<span style="color: blue">end </span>RotFlangeToTau;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE TransFlangeToS<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.Utilities.TransFlangeToSI.png" alt="FMITest.Utilities.TransFlangeToS" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.Utilities.TransFlangeToS"></a><a href="FMITest_Utilities.html#FMITest.Utilities"
+>FMITest.Utilities</a>.TransFlangeToS</h2>
+<p>
+<b>Adaptor for a Translational flange with position, speed, and acceleration as outputs</b>
+<br>
+<br><img src="FMITest.Utilities.TransFlangeToSD.png" alt="FMITest.Utilities.TransFlangeToS">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="FMITest_Utilities_Icons.html#FMITest.Utilities.Icons.PartialMechanicalAdaptorIcon"
+>FMITest.Utilities.Icons.PartialMechanicalAdaptorIcon</a>.</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Boolean</td><td>enable_a</td><td>true</td><td>Enable the output connector a</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Translational_Interfaces.html#Modelica.Mechanics.Translational.Interfaces.Flange_a"
+>Flange_a</a></td><td>flange</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>s</td><td>Flange moves with position s due to force f [m]</td></tr>
+<tr><td>output <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>v</td><td>Flange moves with speed v due to force f [m/s]</td></tr>
+<tr><td>output <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>a</td><td>Flange moves with acceleration a due to force f [m/s2]</td></tr>
+<tr><td>input <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>f</td><td>Force to drive the flange [N]</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> TransFlangeToS <span style="color: #006400">
+  &quot;Adaptor for a Translational flange with position, speed, and acceleration as outputs&quot;</span>
+  <span style="color: blue">extends </span><a href="FMITest_Utilities_Icons.html#FMITest.Utilities.Icons.PartialMechanicalAdaptorIcon"
+>FMITest.Utilities.Icons.PartialMechanicalAdaptorIcon</a>;
+  <span style="color: blue">parameter </span>Boolean enable_a=true <span style="color: #006400">&quot;Enable the output connector a&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Translational_Interfaces.html#Modelica.Mechanics.Translational.Interfaces.Flange_a"
+>Modelica.Mechanics.Translational.Interfaces.Flange_a</a> flange;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> s(unit=&quot;m&quot;) <span style="color: #006400">
+    &quot;Flange moves with position s due to force f&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> v(unit=&quot;m/s&quot;) <span style="color: #006400">
+    &quot;Flange moves with speed v due to force f&quot;</span>;
+
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> a(unit=&quot;m/s2&quot;) <span style="color: blue">if </span>enable_a <span style="color: #006400">
+    &quot;Flange moves with acceleration a due to force f&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> f(unit=&quot;N&quot;) <span style="color: #006400">&quot;Force to drive the flange&quot;</span>;
+
+<span style="color: blue">protected </span>
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> a_internal <span style="color: #006400">
+    &quot;Needed to connect to conditional connector&quot;</span>;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(a, a_internal);
+  <span style="color: blue">if </span><span style="color: blue">not </span>enable_a<span style="color: blue"> then</span>
+    a_internal = 0.0;
+  <span style="color: blue">end if</span>;
+  s = flange.s;
+  v =<span style="color: red"> der</span>(s);
+  <span style="color: blue">if </span>enable_a<span style="color: blue"> then</span>
+    a_internal =<span style="color: red"> der</span>(v);
+  <span style="color: blue">end if</span>;
+  flange.f = f;
+
+<span style="color: blue">end </span>TransFlangeToS;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE TransFlangeToF<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.Utilities.TransFlangeToFI.png" alt="FMITest.Utilities.TransFlangeToF" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.Utilities.TransFlangeToF"></a><a href="FMITest_Utilities.html#FMITest.Utilities"
+>FMITest.Utilities</a>.TransFlangeToF</h2>
+<p>
+<br><img src="FMITest.Utilities.TransFlangeToFD.png" alt="FMITest.Utilities.TransFlangeToF">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="FMITest_Utilities_Icons.html#FMITest.Utilities.Icons.PartialMechanicalAdaptorIcon"
+>Icons.PartialMechanicalAdaptorIcon</a>.</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Boolean</td><td>enable_a</td><td>true</td><td>Enable the output connector a</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Translational_Interfaces.html#Modelica.Mechanics.Translational.Interfaces.Flange_b"
+>Flange_b</a></td><td>flange</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>s</td><td>Position to drive the flange [m]</td></tr>
+<tr><td>input <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>v</td><td>Speed to drive the flange [m/s]</td></tr>
+<tr><td>input <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>a</td><td>Acceleration to drive the flange [m/s2]</td></tr>
+<tr><td>output <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>f</td><td>Force needed to drive the flange according to s, v, a [N]</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> TransFlangeToF
+  <span style="color: blue">extends </span><a href="FMITest_Utilities_Icons.html#FMITest.Utilities.Icons.PartialMechanicalAdaptorIcon"
+>Icons.PartialMechanicalAdaptorIcon</a>;
+  <span style="color: blue">parameter </span>Boolean enable_a=true <span style="color: #006400">&quot;Enable the output connector a&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Translational_Interfaces.html#Modelica.Mechanics.Translational.Interfaces.Flange_b"
+>Modelica.Mechanics.Translational.Interfaces.Flange_b</a> flange;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> s(unit=&quot;m&quot;) <span style="color: #006400">
+    &quot;Position to drive the flange&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> v(unit=&quot;m/s&quot;) <span style="color: #006400">
+    &quot;Speed to drive the flange&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> a(unit=&quot;m/s2&quot;) <span style="color: blue">if </span>enable_a <span style="color: #006400">
+    &quot;Acceleration to drive the flange&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> f(unit=&quot;N&quot;) <span style="color: #006400">
+    &quot;Force needed to drive the flange according to s, v, a&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Translational_Sources.html#Modelica.Mechanics.Translational.Sources.Move"
+>Modelica.Mechanics.Translational.Sources.Move</a> move;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Routing.html#Modelica.Blocks.Routing.Multiplex3"
+>Modelica.Blocks.Routing.Multiplex3</a> multiplex3;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Translational_Sensors.html#Modelica.Mechanics.Translational.Sensors.ForceSensor"
+>Modelica.Mechanics.Translational.Sensors.ForceSensor</a> forceSensor;
+
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> const(<span style="color: blue">final </span>k=0) <span style="color: blue">if </span><span style="color: blue">not </span>enable_a;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(multiplex3.y, move.u);
+  <span style="color: red">connect</span>(s, multiplex3.u1[1]);
+  <span style="color: red">connect</span>(v, multiplex3.u2[1]);
+  <span style="color: red">connect</span>(a, multiplex3.u3[1]);
+  <span style="color: red">connect</span>(flange, forceSensor.flange_b);
+  <span style="color: red">connect</span>(move.flange, forceSensor.flange_a);
+  <span style="color: red">connect</span>(forceSensor.f, f);
+  <span style="color: red">connect</span>(const.y, multiplex3.u3[1]);
+<span style="color: blue">end </span>TransFlangeToF;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE InquireInitializationEnd<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="FMITest.Utilities.InquireInitializationEnd"></a><a href="FMITest_Utilities.html#FMITest.Utilities"
+>FMITest.Utilities</a>.InquireInitializationEnd</h2>
+<p>
+<b>Modelica code to inquire when fmiCompletedInitialization has to be called in a Modelica model</b>
+<br>
+<br><img src="FMITest.Utilities.Inquire2ebf945ae33d07eaonEndD.png" alt="FMITest.Utilities.InquireInitializationEnd">
+</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> InquireInitializationEnd <span style="color: #006400">
+  &quot;Modelica code to inquire when fmiCompletedInitialization has to be called in a Modelica model&quot;</span>
+  Real x(start=1);
+  Boolean first(start=true, fixed=true);
+  Boolean first2;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Examples.html#Modelica.Mechanics.Rotational.Examples.Friction"
+>Modelica.Mechanics.Rotational.Examples.Friction</a> friction;
+<span style="color: blue">initial </span><span style="color: blue">equation </span>
+  0.5 =<span style="color: red"> Modelica.Math.sin</span>(x)^2 +<span style="color: red"> sqrt</span>(x);
+  first2 = true;
+<span style="color: blue">equation </span>
+  <span style="color: red">der</span>(x) = -x;
+  <span style="color: blue">when </span><span style="color: blue">not </span><span style="color: red">initial</span>()<span style="color: blue"> then</span>
+    <span style="color: #006400">// Call fmiCompletedInitialization here</span>
+    first = false;
+    first2 = false;
+  <span style="color: blue">end when</span>;
+  <span style="color: red">LogVariable</span>(first);
+  <span style="color: red">LogVariable</span>(first2);
+<span style="color: blue">end </span>InquireInitializationEnd;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Fri Apr 25 16:23:31 2014.
+</address>
+</body>
+</html>

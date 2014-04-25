@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>FMITest.NonlinearSystems.InverseSine</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="&quot;Test of the connection of a Sine with a Ramp block leading to a nonlinear system of equations (the output of a Sine should move according to a ramp)&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE InverseSine<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="FMITest.NonlinearSystems.InverseSine"></a><a href="FMITest_NonlinearSystems.html#FMITest.NonlinearSystems"
+>FMITest.NonlinearSystems</a>.InverseSine</h2>
+<p>
+<b>Test of the connection of a Sine with a Ramp block leading to a nonlinear system of equations (the output of a Sine should move according to a ramp)</b><br>
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons_ExamplesPackage.html#Modelica.Icons.ExamplesPackage"
+>Modelica.Icons.ExamplesPackage</a> (Icon for packages containing runnable examples).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="FMITest.NonlinearSystems.1e27b674069cd7derenceS.png" alt="FMITest.NonlinearSystems.InverseSine.Reference" width="20" height="20" align="top">&nbsp;<a href="FMITest_NonlinearSystems_InverseSine.html#FMITest.NonlinearSystems.InverseSine.Reference"
+>Reference</a>
+</td>
+<td>Reference solution in pure Modelica</td>
+</tr>
+<tr>
+<td><img src="FMITest.NonlinearSystems.1e27b674069cd7derenceS.png" alt="FMITest.NonlinearSystems.InverseSine.WithFMUsReference" width="20" height="20" align="top">&nbsp;<a href="FMITest_NonlinearSystems_InverseSine.html#FMITest.NonlinearSystems.InverseSine.WithFMUsReference"
+>WithFMUsReference</a>
+</td>
+<td>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.NonlinearSystems.1e27b674069cd7derenceS.png" alt="FMITest.NonlinearSystems.InverseSine.WithFMUs" width="20" height="20" align="top">&nbsp;<a href="FMITest_NonlinearSystems_InverseSine.html#FMITest.NonlinearSystems.InverseSine.WithFMUs"
+>WithFMUs</a>
+</td>
+<td>Solution with FMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.NonlinearSystems.f6bd3e79974c6f64odelsS.png" alt="FMITest.NonlinearSystems.InverseSine.FMUModels" width="20" height="20" align="top">&nbsp;<a href="FMITest_NonlinearSystems_InverseSine_FMUModels.html#FMITest.NonlinearSystems.InverseSine.FMUModels"
+>FMUModels</a>
+</td>
+<td>For all models in this package an FMU must be generated</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Reference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.NonlinearSystems.1e27b674069cd7derenceI.png" alt="FMITest.NonlinearSystems.InverseSine.Reference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.NonlinearSystems.InverseSine.Reference"></a><a href="FMITest_NonlinearSystems_InverseSine.html#FMITest.NonlinearSystems.InverseSine"
+>FMITest.NonlinearSystems.InverseSine</a>.Reference</h2>
+<p>
+<b>Reference solution in pure Modelica</b>
+<br>
+<br><img src="FMITest.NonlinearSystems.1e27b674069cd7derenceD.png" alt="FMITest.NonlinearSystems.InverseSine.Reference">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> Reference <span style="color: #006400">&quot;Reference solution in pure Modelica&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.InverseBlockConstraints"
+>Modelica.Blocks.Math.InverseBlockConstraints</a> inverseBlockConstraints;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.Sin"
+>Modelica.Blocks.Math.Sin</a> sin;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Ramp"
+>Modelica.Blocks.Sources.Ramp</a> ramp(
+    duration=0.5,
+    offset=0.09,
+    height=0.9);
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(inverseBlockConstraints.y2, sin.u);
+  <span style="color: red">connect</span>(sin.y, inverseBlockConstraints.u2);
+  <span style="color: red">connect</span>(ramp.y, inverseBlockConstraints.u1);
+<span style="color: blue">end </span>Reference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUsReference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.NonlinearSystems.1e27b674069cd7derenceI.png" alt="FMITest.NonlinearSystems.InverseSine.WithFMUsReference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.NonlinearSystems.InverseSine.WithFMUsReference"></a><a href="FMITest_NonlinearSystems_InverseSine.html#FMITest.NonlinearSystems.InverseSine"
+>FMITest.NonlinearSystems.InverseSine</a>.WithFMUsReference</h2>
+<p>
+<b>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</b>
+<br>
+<br><img src="FMITest.NonlinearSystems.9ee259958529baabrenceD.png" alt="FMITest.NonlinearSystems.InverseSine.WithFMUsReference">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUsReference <span style="color: #006400">
+  &quot;Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.InverseBlockConstraints"
+>Modelica.Blocks.Math.InverseBlockConstraints</a> inverseBlockConstraints;
+  <a href="FMITest_NonlinearSystems_InverseSine_FMUModels.html#FMITest.NonlinearSystems.InverseSine.FMUModels.Sine"
+>FMUModels.Sine</a> sin;
+  <a href="FMITest_NonlinearSystems_InverseSine_FMUModels.html#FMITest.NonlinearSystems.InverseSine.FMUModels.Ramp"
+>FMUModels.Ramp</a> ramp(
+    duration=0.5,
+    offset=0.09,
+    height=0.9);
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(inverseBlockConstraints.y2, sin.u);
+  <span style="color: red">connect</span>(sin.y, inverseBlockConstraints.u2);
+  <span style="color: red">connect</span>(ramp.y, inverseBlockConstraints.u1);
+<span style="color: blue">end </span>WithFMUsReference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUs<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.NonlinearSystems.1e27b674069cd7derenceI.png" alt="FMITest.NonlinearSystems.InverseSine.WithFMUs" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.NonlinearSystems.InverseSine.WithFMUs"></a><a href="FMITest_NonlinearSystems_InverseSine.html#FMITest.NonlinearSystems.InverseSine"
+>FMITest.NonlinearSystems.InverseSine</a>.WithFMUs</h2>
+<p>
+<b>Solution with FMUs</b>
+<br>
+<br><img src="FMITest.NonlinearSystems.9ee259958529baabrenceD.png" alt="FMITest.NonlinearSystems.InverseSine.WithFMUs">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUs <span style="color: #006400">&quot;Solution with FMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.InverseBlockConstraints"
+>Modelica.Blocks.Math.InverseBlockConstraints</a> inverseBlockConstraints;
+  <a href="FMITest_NonlinearSystems_InverseSine_FMUModels.html#FMITest.NonlinearSystems.InverseSine.FMUModels.Sine"
+>FMUModels.Sine</a> sin;
+  <a href="FMITest_NonlinearSystems_InverseSine_FMUModels.html#FMITest.NonlinearSystems.InverseSine.FMUModels.Ramp"
+>FMUModels.Ramp</a> ramp(
+    duration=0.5,
+    offset=0.09,
+    height=0.9);
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(inverseBlockConstraints.y2, sin.u);
+  <span style="color: red">connect</span>(sin.y, inverseBlockConstraints.u2);
+  <span style="color: red">connect</span>(ramp.y, inverseBlockConstraints.u1);
+<span style="color: blue">end </span>WithFMUs;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Fri Apr 25 16:23:10 2014.
+</address>
+</body>
+</html>

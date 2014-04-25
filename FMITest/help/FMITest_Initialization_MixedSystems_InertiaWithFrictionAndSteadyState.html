@@ -1,0 +1,211 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="&quot;Steady state initialization over a mixed system of equations (inertia with friction)&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE InertiaWithFrictionAndSteadyState<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState"></a><a href="FMITest_Initialization_MixedSystems.html#FMITest.Initialization.MixedSystems"
+>FMITest.Initialization.MixedSystems</a>.InertiaWithFrictionAndSteadyState</h2>
+<p>
+<b>Steady state initialization over a mixed system of equations (inertia with friction)</b><br>
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons_ExamplesPackage.html#Modelica.Icons.ExamplesPackage"
+>Modelica.Icons.ExamplesPackage</a> (Icon for packages containing runnable examples).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="FMITest.Initialization.Mi4f8639e674c51d23renceS.png" alt="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.Reference" width="20" height="20" align="top">&nbsp;<a href="FMITest_Initialization_MixedSystems_InertiaWithFrictionAndSteadyState.html#FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.Reference"
+>Reference</a>
+</td>
+<td>Reference solution in pure Modelica</td>
+</tr>
+<tr>
+<td><img src="FMITest.Initialization.Mi4f8639e674c51d23renceS.png" alt="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.WithFMUsReference" width="20" height="20" align="top">&nbsp;<a href="FMITest_Initialization_MixedSystems_InertiaWithFrictionAndSteadyState.html#FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.WithFMUsReference"
+>WithFMUsReference</a>
+</td>
+<td>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.Initialization.Mi4f8639e674c51d23renceS.png" alt="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.WithFMUs" width="20" height="20" align="top">&nbsp;<a href="FMITest_Initialization_MixedSystems_InertiaWithFrictionAndSteadyState.html#FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.WithFMUs"
+>WithFMUs</a>
+</td>
+<td>Solution with FMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.Initialization.Mi281bc1ebe515a599odelsS.png" alt="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.FMUModels" width="20" height="20" align="top">&nbsp;<a href="FMITest_Initialization_MixedSystems_InertiaWithFrictionAndSteadyState_FMUModels.html#FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.FMUModels"
+>FMUModels</a>
+</td>
+<td>For all models in this package an FMU must be generated</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Reference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.Initialization.Mi4f8639e674c51d23renceI.png" alt="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.Reference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.Reference"></a><a href="FMITest_Initialization_MixedSystems_InertiaWithFrictionAndSteadyState.html#FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState"
+>FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState</a>.Reference</h2>
+<p>
+<b>Reference solution in pure Modelica</b>
+<br>
+<br><img src="FMITest.Initialization.Mi4f8639e674c51d23renceD.png" alt="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.Reference">
+</p>
+<h3>Information</h3>
+
+<p>
+The parameters are selected so that both friction elements are partly  
+sliding (mode = +/- 1) or partly stuck (mode = 0). Plot the following variables:
+</p>
+
+<p>
+<img src="file:///D:/otter/_Subversion/FMI/branches/public/Test_FMUs/_FMIModelicaTest/FMITest/Resources/Images/TwoFriction1.png">
+</p>
+
+<p>
+<img src="file:///D:/otter/_Subversion/FMI/branches/public/Test_FMUs/_FMIModelicaTest/FMITest/Resources/Images/TwoFriction2.png">
+</p>
+
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> Reference <span style="color: #006400">&quot;Reference solution in pure Modelica&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Inertia"
+>Modelica.Mechanics.Rotational.Components.Inertia</a> inertia(
+    J=1.1,
+    w(start=0, fixed=true),
+    phi(start=0, fixed=false),
+    a(fixed=true, start=0));
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Sources.html#Modelica.Mechanics.Rotational.Sources.Torque"
+>Modelica.Mechanics.Rotational.Sources.Torque</a> torque1;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Sine"
+>Modelica.Blocks.Sources.Sine</a> sine(
+    freqHz=1.2,
+    amplitude=2,
+    startTime=0.5);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.BearingFriction"
+>Modelica.Mechanics.Rotational.Components.BearingFriction</a> friction(
+      useSupport=false);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.SpringDamper"
+>Modelica.Mechanics.Rotational.Components.SpringDamper</a> springDamper(c=1000,
+      d=10);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Fixed"
+>Modelica.Mechanics.Rotational.Components.Fixed</a> fixed;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Sources.html#Modelica.Mechanics.Rotational.Sources.Torque"
+>Modelica.Mechanics.Rotational.Sources.Torque</a> torque2;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> const(k=2.0);
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(sine.y, torque1.tau);
+  <span style="color: red">connect</span>(friction.flange_a, torque1.flange);
+  <span style="color: red">connect</span>(inertia.flange_a, friction.flange_b);
+  <span style="color: red">connect</span>(inertia.flange_b, springDamper.flange_a);
+  <span style="color: red">connect</span>(springDamper.flange_b, fixed.flange);
+  <span style="color: red">connect</span>(torque2.flange, torque1.flange);
+  <span style="color: red">connect</span>(const.y, torque2.tau);
+<span style="color: blue">end </span>Reference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUsReference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.Initialization.Mi4f8639e674c51d23renceI.png" alt="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.WithFMUsReference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.WithFMUsReference"></a><a href="FMITest_Initialization_MixedSystems_InertiaWithFrictionAndSteadyState.html#FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState"
+>FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState</a>.WithFMUsReference</h2>
+<p>
+<b>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</b>
+<br>
+<br><img src="FMITest.Initialization.Mi0152be47dc2547d9renceD.png" alt="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.WithFMUsReference">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUsReference <span style="color: #006400">
+  &quot;Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+
+  <a href="FMITest_Initialization_MixedSystems_InertiaWithFrictionAndSteadyState_FMUModels.html#FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.FMUModels.FrictionInertia"
+>FMUModels.FrictionInertia</a> frictionInertia;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> const(k=2.0);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Sine"
+>Modelica.Blocks.Sources.Sine</a> sine(
+    freqHz=1.2,
+    amplitude=2,
+    startTime=0.5);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.MultiSum"
+>Modelica.Blocks.Math.MultiSum</a> multiSum(nu=2);
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(const.y, multiSum.u[1]);
+  <span style="color: red">connect</span>(sine.y, multiSum.u[2]);
+  <span style="color: red">connect</span>(multiSum.y, frictionInertia.tauDrive);
+<span style="color: blue">end </span>WithFMUsReference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUs<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.Initialization.Mi4f8639e674c51d23renceI.png" alt="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.WithFMUs" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.WithFMUs"></a><a href="FMITest_Initialization_MixedSystems_InertiaWithFrictionAndSteadyState.html#FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState"
+>FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState</a>.WithFMUs</h2>
+<p>
+<b>Solution with FMUs</b>
+<br>
+<br><img src="FMITest.Initialization.Mice19bd4c176c8ff1hFMUsD.png" alt="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.WithFMUs">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUs <span style="color: #006400">&quot;Solution with FMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+
+  <a href="FMITest_Initialization_MixedSystems_InertiaWithFrictionAndSteadyState_FMUModels.html#FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.FMUModels.FrictionInertia"
+>FMUModels.FrictionInertia</a> frictionInertia;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> const(k=2.0);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Sine"
+>Modelica.Blocks.Sources.Sine</a> sine(
+    freqHz=1.2,
+    amplitude=2,
+    startTime=0.5);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.MultiSum"
+>Modelica.Blocks.Math.MultiSum</a> multiSum(nu=2);
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(const.y, multiSum.u[1]);
+  <span style="color: red">connect</span>(sine.y, multiSum.u[2]);
+  <span style="color: red">connect</span>(multiSum.y, frictionInertia.tauDrive);
+<span style="color: blue">end </span>WithFMUs;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Fri Apr 25 16:23:30 2014.
+</address>
+</body>
+</html>

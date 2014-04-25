@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.FMUModels</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="&quot;For all models in this package an FMU must be generated&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE FMUModels<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.FMUModels"></a><a href="FMITest_Initialization_MixedSystems_InertiaWithFrictionAndSteadyState.html#FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState"
+>FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState</a>.FMUModels</h2>
+<p>
+<b>For all models in this package an FMU must be generated</b><br>
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons_Package.html#Modelica.Icons.Package"
+>Modelica.Icons.Package</a> (Icon for standard packages).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="FMITest.Initialization.Micdbaa9891fad1554ertiaS.png" alt="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.FMUModels.FrictionInertia" width="20" height="20" align="top">&nbsp;<a href="FMITest_Initialization_MixedSystems_InertiaWithFrictionAndSteadyState_FMUModels.html#FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.FMUModels.FrictionInertia"
+>FrictionInertia</a>
+</td>
+<td>Input/output block of an inertia with friction</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE FrictionInertia<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.Initialization.Micdbaa9891fad1554ertiaI.png" alt="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.FMUModels.FrictionInertia" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.FMUModels.FrictionInertia"></a><a href="FMITest_Initialization_MixedSystems_InertiaWithFrictionAndSteadyState_FMUModels.html#FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.FMUModels"
+>FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.FMUModels</a>.FrictionInertia</h2>
+<p>
+<b>Input/output block of an inertia with friction</b>
+<br>
+<br><img src="FMITest.Initialization.Micdbaa9891fad1554ertiaD.png" alt="FMITest.Initialization.MixedSystems.InertiaWithFrictionAndSteadyState.FMUModels.FrictionInertia">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BlockIcon"
+>Modelica.Blocks.Interfaces.BlockIcon</a> (Basic graphical layout of input/output block).</p>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td>input <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>tauDrive</td><td>Accelerating torque acting at flange (= -flange.tau)</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> FrictionInertia <span style="color: #006400">
+  &quot;Input/output block of an inertia with friction&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BlockIcon"
+>Modelica.Blocks.Interfaces.BlockIcon</a>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> tauDrive <span style="color: #006400">
+    &quot;Accelerating torque acting at flange (= -flange.tau)&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Sources.html#Modelica.Mechanics.Rotational.Sources.Torque"
+>Modelica.Mechanics.Rotational.Sources.Torque</a> torque;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.BearingFriction"
+>Modelica.Mechanics.Rotational.Components.BearingFriction</a> friction(
+      useSupport=false);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Inertia"
+>Modelica.Mechanics.Rotational.Components.Inertia</a> inertia(
+    J=1.1,
+    w(start=0, fixed=true),
+    phi(start=0, fixed=false),
+    a(fixed=true, start=0));
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.SpringDamper"
+>Modelica.Mechanics.Rotational.Components.SpringDamper</a> springDamper(c=1000,
+      d=10);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Fixed"
+>Modelica.Mechanics.Rotational.Components.Fixed</a> fixed;
+<span style="color: blue">equation </span>
+
+  <span style="color: red">connect</span>(inertia.flange_a, friction.flange_b);
+  <span style="color: red">connect</span>(inertia.flange_b, springDamper.flange_a);
+  <span style="color: red">connect</span>(springDamper.flange_b, fixed.flange);
+  <span style="color: red">connect</span>(torque.tau, tauDrive);
+  <span style="color: red">connect</span>(torque.flange, friction.flange_a);
+<span style="color: blue">end </span>FrictionInertia;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Fri Apr 25 16:23:30 2014.
+</address>
+</body>
+</html>

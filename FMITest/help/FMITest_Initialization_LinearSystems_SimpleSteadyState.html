@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>FMITest.Initialization.LinearSystems.SimpleSteadyState</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="&quot;Simple steady state initialization of an FMU leading to a linear system of equations over FMUs during initialization&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE SimpleSteadyState<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="FMITest.Initialization.LinearSystems.SimpleSteadyState"></a><a href="FMITest_Initialization_LinearSystems.html#FMITest.Initialization.LinearSystems"
+>FMITest.Initialization.LinearSystems</a>.SimpleSteadyState</h2>
+<p>
+<b>Simple steady state initialization of an FMU leading to a linear system of equations over FMUs during initialization</b><br>
+</p>
+<h3>Information</h3>
+
+<p>
+With this test model it is tested how the initialization of an FMU
+can be changed in the environment where this FMU is used. There are two
+identical FMUs in this model:
+</p>
+
+<ul>
+<li> simpleWithFixedState uses the default initialization defined in the FMU</li>
+
+<li> simpleWithSteadyState is the same FMU, but provides a parameter to the start value of the
+     FMU and this parameter has fixed=false. Additionally, the state derivative of the FMU
+     is set to zero in the environment leading to a steady-state condition.</li>
+</ul>
+
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons_ExamplesPackage.html#Modelica.Icons.ExamplesPackage"
+>Modelica.Icons.ExamplesPackage</a> (Icon for packages containing runnable examples).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="FMITest.Initialization.Lie66871c0a14ae4c8renceS.png" alt="FMITest.Initialization.LinearSystems.SimpleSteadyState.WithFMUsReference" width="20" height="20" align="top">&nbsp;<a href="FMITest_Initialization_LinearSystems_SimpleSteadyState.html#FMITest.Initialization.LinearSystems.SimpleSteadyState.WithFMUsReference"
+>WithFMUsReference</a>
+</td>
+<td>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.Initialization.Lie66871c0a14ae4c8renceS.png" alt="FMITest.Initialization.LinearSystems.SimpleSteadyState.WithFMUs" width="20" height="20" align="top">&nbsp;<a href="FMITest_Initialization_LinearSystems_SimpleSteadyState.html#FMITest.Initialization.LinearSystems.SimpleSteadyState.WithFMUs"
+>WithFMUs</a>
+</td>
+<td>Solution with FMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.Initialization.Li1712b0c4f4680a32odelsS.png" alt="FMITest.Initialization.LinearSystems.SimpleSteadyState.FMUModels" width="20" height="20" align="top">&nbsp;<a href="FMITest_Initialization_LinearSystems_SimpleSteadyState_FMUModels.html#FMITest.Initialization.LinearSystems.SimpleSteadyState.FMUModels"
+>FMUModels</a>
+</td>
+<td>For all models in this package an FMU must be generated</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUsReference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.Initialization.Lie66871c0a14ae4c8renceI.png" alt="FMITest.Initialization.LinearSystems.SimpleSteadyState.WithFMUsReference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.Initialization.LinearSystems.SimpleSteadyState.WithFMUsReference"></a><a href="FMITest_Initialization_LinearSystems_SimpleSteadyState.html#FMITest.Initialization.LinearSystems.SimpleSteadyState"
+>FMITest.Initialization.LinearSystems.SimpleSteadyState</a>.WithFMUsReference</h2>
+<p>
+<b>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</b>
+<br>
+<br><img src="FMITest.Initialization.Lie66871c0a14ae4c8renceD.png" alt="FMITest.Initialization.LinearSystems.SimpleSteadyState.WithFMUsReference">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Real</td><td>p</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUsReference <span style="color: #006400">
+  &quot;Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+  <span style="color: blue">parameter </span>Real p(start=2,fixed=false);
+  <a href="FMITest_Initialization_LinearSystems_SimpleSteadyState_FMUModels.html#FMITest.Initialization.LinearSystems.SimpleSteadyState.FMUModels.SimpleLinearModel1"
+>FMUModels.SimpleLinearModel1</a> simpleWithFixedState;
+  <a href="FMITest_Initialization_LinearSystems_SimpleSteadyState_FMUModels.html#FMITest.Initialization.LinearSystems.SimpleSteadyState.FMUModels.SimpleLinearModel2"
+>FMUModels.SimpleLinearModel2</a> simpleWithSteadyState(x(start=p));
+<span style="color: blue">initial </span><span style="color: blue">equation </span>
+  <span style="color: red">der</span>(simpleWithSteadyState.x) = 0;
+
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(simpleWithSteadyState.y, simpleWithSteadyState.u);
+  <span style="color: red">connect</span>(simpleWithFixedState.y, simpleWithFixedState.u);
+<span style="color: blue">end </span>WithFMUsReference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUs<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.Initialization.Lie66871c0a14ae4c8renceI.png" alt="FMITest.Initialization.LinearSystems.SimpleSteadyState.WithFMUs" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.Initialization.LinearSystems.SimpleSteadyState.WithFMUs"></a><a href="FMITest_Initialization_LinearSystems_SimpleSteadyState.html#FMITest.Initialization.LinearSystems.SimpleSteadyState"
+>FMITest.Initialization.LinearSystems.SimpleSteadyState</a>.WithFMUs</h2>
+<p>
+<b>Solution with FMUs</b>
+<br>
+<br><img src="FMITest.Initialization.Lie66871c0a14ae4c8renceD.png" alt="FMITest.Initialization.LinearSystems.SimpleSteadyState.WithFMUs">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Real</td><td>p</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUs <span style="color: #006400">&quot;Solution with FMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+  <span style="color: blue">parameter </span>Real p(start=2,fixed=false);
+  <a href="FMITest_Initialization_LinearSystems_SimpleSteadyState_FMUModels.html#FMITest.Initialization.LinearSystems.SimpleSteadyState.FMUModels.SimpleLinearModel1"
+>FMUModels.SimpleLinearModel1</a> simpleWithFixedState;
+  <a href="FMITest_Initialization_LinearSystems_SimpleSteadyState_FMUModels.html#FMITest.Initialization.LinearSystems.SimpleSteadyState.FMUModels.SimpleLinearModel2"
+>FMUModels.SimpleLinearModel2</a> simpleWithSteadyState(x(start=p));
+<span style="color: blue">initial </span><span style="color: blue">equation </span>
+  <span style="color: red">der</span>(simpleWithSteadyState.x) = 0;
+
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(simpleWithSteadyState.y, simpleWithSteadyState.u);
+  <span style="color: red">connect</span>(simpleWithFixedState.y, simpleWithFixedState.u);
+<span style="color: blue">end </span>WithFMUs;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Fri Apr 25 16:23:26 2014.
+</address>
+</body>
+</html>

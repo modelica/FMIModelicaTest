@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>FMITest.MixedSystems.AutomaticGearbox.FMUModels</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="&quot;For all models in this package an FMU must be generated&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE FMUModels<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="FMITest.MixedSystems.AutomaticGearbox.FMUModels"></a><a href="FMITest_MixedSystems_AutomaticGearbox.html#FMITest.MixedSystems.AutomaticGearbox"
+>FMITest.MixedSystems.AutomaticGearbox</a>.FMUModels</h2>
+<p>
+<b>For all models in this package an FMU must be generated</b><br>
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons_Package.html#Modelica.Icons.Package"
+>Modelica.Icons.Package</a> (Icon for standard packages).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="FMITest.MixedSystems.Autofcb7aede08040238cGearS.png" alt="FMITest.MixedSystems.AutomaticGearbox.FMUModels.AutomaticGear" width="20" height="20" align="top">&nbsp;<a href="FMITest_MixedSystems_AutomaticGearbox_FMUModels.html#FMITest.MixedSystems.AutomaticGearbox.FMUModels.AutomaticGear"
+>AutomaticGear</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="FMITest.MixedSystems.Auto707d37f7e51fe1e0s.ECUS.png" alt="FMITest.MixedSystems.AutomaticGearbox.FMUModels.ECU" width="20" height="20" align="top">&nbsp;<a href="FMITest_MixedSystems_AutomaticGearbox_FMUModels.html#FMITest.MixedSystems.AutomaticGearbox.FMUModels.ECU"
+>ECU</a>
+</td>
+<td>Very simple electronic control unit to control clutches C1, C2 and brakes B1, B2</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE AutomaticGear<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.MixedSystems.Autofcb7aede08040238cGearI.png" alt="FMITest.MixedSystems.AutomaticGearbox.FMUModels.AutomaticGear" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.MixedSystems.AutomaticGearbox.FMUModels.AutomaticGear"></a><a href="FMITest_MixedSystems_AutomaticGearbox_FMUModels.html#FMITest.MixedSystems.AutomaticGearbox.FMUModels"
+>FMITest.MixedSystems.AutomaticGearbox.FMUModels</a>.AutomaticGear</h2>
+<p>
+<br><img src="FMITest.MixedSystems.Autofcb7aede08040238cGearD.png" alt="FMITest.MixedSystems.AutomaticGearbox.FMUModels.AutomaticGear">
+</p>
+<h3>Information</h3>
+
+<p>
+The parameters are selected so that both friction elements are partly  
+sliding (mode = +/- 1) or partly stuck (mode = 0). Plot the following variables:
+</p>
+
+<p>
+<img src="file:///D:/otter/_Subversion/FMI/branches/public/Test_FMUs/_FMIModelicaTest/FMITest/Resources/Images/TwoFriction1.png">
+</p>
+
+<p>
+<img src="file:///D:/otter/_Subversion/FMI/branches/public/Test_FMUs/_FMIModelicaTest/FMITest/Resources/Images/TwoFriction2.png">
+</p>
+
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Force"
+>Force</a></td><td>fn_max</td><td>1000</td><td>[N]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td>input <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanInput"
+>BooleanInput</a></td><td>c1</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanInput"
+>BooleanInput</a></td><td>c2</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanInput"
+>BooleanInput</a></td><td>b1</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanInput"
+>BooleanInput</a></td><td>b2</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>v</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> AutomaticGear
+
+  <span style="color: blue">parameter </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Force"
+>Modelica.SIunits.Force</a> fn_max=1000;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.IdealPlanetary"
+>Modelica.Mechanics.Rotational.Components.IdealPlanetary</a> planetary1(ratio=
+        100/40);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.IdealPlanetary"
+>Modelica.Mechanics.Rotational.Components.IdealPlanetary</a> planetary2(ratio=
+        100/20);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Clutch"
+>Modelica.Mechanics.Rotational.Components.Clutch</a> C1(
+    fn_max=fn_max,
+    stateSelect=StateSelect.always,
+    phi_rel(fixed=true),
+    w_rel(fixed=true));
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Clutch"
+>Modelica.Mechanics.Rotational.Components.Clutch</a> C2(
+    fn_max=fn_max,
+    phi_rel(fixed=true),
+    w_rel(fixed=true),
+    stateSelect=StateSelect.always);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Brake"
+>Modelica.Mechanics.Rotational.Components.Brake</a> B2(fn_max=fn_max,
+      useSupport=false);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Brake"
+>Modelica.Mechanics.Rotational.Components.Brake</a> B1(fn_max=fn_max,
+      useSupport=false);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Inertia"
+>Modelica.Mechanics.Rotational.Components.Inertia</a> inertia1(
+    J=2,
+    phi(fixed=true, start=0),
+    w(fixed=true, start=0),
+    stateSelect=StateSelect.always);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Sources.html#Modelica.Mechanics.Rotational.Sources.Torque"
+>Modelica.Mechanics.Rotational.Sources.Torque</a> torque(useSupport=false);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Inertia"
+>Modelica.Mechanics.Rotational.Components.Inertia</a> inertia2(
+    J=0.2,
+    phi(fixed=false),
+    w(fixed=false));
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> const(k=250);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.IdealGear"
+>Modelica.Mechanics.Rotational.Components.IdealGear</a> gear(ratio=3,
+      useSupport=false);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.IdealGearR2T"
+>Modelica.Mechanics.Rotational.Components.IdealGearR2T</a> r2t(
+    ratio=1/0.3,
+    useSupportR=false,
+    useSupportT=false);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Translational_Components.html#Modelica.Mechanics.Translational.Components.Mass"
+>Modelica.Mechanics.Translational.Components.Mass</a> mass(
+    m=1000,
+    s(fixed=false),
+    v(fixed=false));
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Translational_Sensors.html#Modelica.Mechanics.Translational.Sensors.SpeedSensor"
+>Modelica.Mechanics.Translational.Sensors.SpeedSensor</a> speedSensor;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.BooleanToReal"
+>Modelica.Blocks.Math.BooleanToReal</a> c1b;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.BooleanToReal"
+>Modelica.Blocks.Math.BooleanToReal</a> c2b;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.BooleanToReal"
+>Modelica.Blocks.Math.BooleanToReal</a> b1b;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.BooleanToReal"
+>Modelica.Blocks.Math.BooleanToReal</a> b2b;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanInput"
+>Modelica.Blocks.Interfaces.BooleanInput</a> c1;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanInput"
+>Modelica.Blocks.Interfaces.BooleanInput</a> c2;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanInput"
+>Modelica.Blocks.Interfaces.BooleanInput</a> b1;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanInput"
+>Modelica.Blocks.Interfaces.BooleanInput</a> b2;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> v;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(B2.flange_b, planetary1.sun);
+  <span style="color: red">connect</span>(inertia1.flange_b, C2.flange_a);
+  <span style="color: red">connect</span>(torque.flange, inertia1.flange_a);
+
+  <span style="color: red">connect</span>(const.y, torque.tau);
+  <span style="color: red">connect</span>(C2.flange_a, C1.flange_a);
+  <span style="color: red">connect</span>(C2.flange_b, inertia2.flange_a);
+  <span style="color: red">connect</span>(inertia2.flange_b, B2.flange_a);
+  <span style="color: red">connect</span>(planetary1.carrier, planetary2.ring);
+  <span style="color: red">connect</span>(planetary1.sun, planetary2.sun);
+  <span style="color: red">connect</span>(planetary1.ring, C1.flange_b);
+  <span style="color: red">connect</span>(planetary2.carrier, B1.flange_b);
+  <span style="color: red">connect</span>(gear.flange_b, r2t.flangeR);
+  <span style="color: red">connect</span>(r2t.flangeT, mass.flange_a);
+  <span style="color: red">connect</span>(mass.flange_b, speedSensor.flange);
+  <span style="color: red">connect</span>(planetary2.ring, gear.flange_a);
+
+  <span style="color: red">connect</span>(c1b.y, C1.f_normalized);
+  <span style="color: red">connect</span>(c2b.y, C2.f_normalized);
+  <span style="color: red">connect</span>(b1b.y, B1.f_normalized);
+  <span style="color: red">connect</span>(b2b.y, B2.f_normalized);
+  <span style="color: red">connect</span>(c1b.u, c1);
+  <span style="color: red">connect</span>(c2b.u, c2);
+  <span style="color: red">connect</span>(b1b.u, b1);
+  <span style="color: red">connect</span>(b2b.u, b2);
+  <span style="color: red">connect</span>(speedSensor.v, v);
+<span style="color: blue">end </span>AutomaticGear;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE ECU<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.MixedSystems.Auto707d37f7e51fe1e0s.ECUI.png" alt="FMITest.MixedSystems.AutomaticGearbox.FMUModels.ECU" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.MixedSystems.AutomaticGearbox.FMUModels.ECU"></a><a href="FMITest_MixedSystems_AutomaticGearbox_FMUModels.html#FMITest.MixedSystems.AutomaticGearbox.FMUModels"
+>FMITest.MixedSystems.AutomaticGearbox.FMUModels</a>.ECU</h2>
+<p>
+<b>Very simple electronic control unit to control clutches C1, C2 and brakes B1, B2</b>
+<br>
+<br><img src="FMITest.MixedSystems.Auto707d37f7e51fe1e0s.ECUD.png" alt="FMITest.MixedSystems.AutomaticGearbox.FMUModels.ECU">
+</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Time"
+>Time</a></td><td>t_start</td><td>1</td><td>Time instant when the driver switches from &#39;N&#39; to &#39;D&#39;, i.e., when the car starts driving [s]</td></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Velocity"
+>Velocity</a></td><td>v_up_12</td><td>10</td><td>Velocity to switch from gear 1 into gear 2 [m/s]</td></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Velocity"
+>Velocity</a></td><td>v_up_23</td><td>20</td><td>Velocity to switch from gear 2 into gear 3 [m/s]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td>output <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanOutput"
+>BooleanOutput</a></td><td>C1</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanOutput"
+>BooleanOutput</a></td><td>C2</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanOutput"
+>BooleanOutput</a></td><td>B1</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanOutput"
+>BooleanOutput</a></td><td>B2</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>speed</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> ECU <span style="color: #006400">
+  &quot;Very simple electronic control unit to control clutches C1, C2 and brakes B1, B2&quot;</span>
+
+  <span style="color: blue">import </span>SI = <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits"
+>Modelica.SIunits</a>;
+  <span style="color: blue">parameter </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Time"
+>SI.Time</a> t_start=1 <span style="color: #006400">
+    &quot;Time instant when the driver switches from &#39;N&#39; to &#39;D&#39;, i.e., when the car starts driving&quot;</span>;
+  <span style="color: blue">parameter </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Velocity"
+>SI.Velocity</a> v_up_12=10 <span style="color: #006400">&quot;Velocity to switch from gear 1 into gear 2&quot;</span>;
+  <span style="color: blue">parameter </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Velocity"
+>SI.Velocity</a> v_up_23=20 <span style="color: #006400">&quot;Velocity to switch from gear 2 into gear 3&quot;</span>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanOutput"
+>Modelica.Blocks.Interfaces.BooleanOutput</a> C1;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanOutput"
+>Modelica.Blocks.Interfaces.BooleanOutput</a> C2;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanOutput"
+>Modelica.Blocks.Interfaces.BooleanOutput</a> B1;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanOutput"
+>Modelica.Blocks.Interfaces.BooleanOutput</a> B2;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> speed;
+  Integer gear;
+
+<span style="color: blue">equation </span>
+  gear = <span style="color: blue">if </span>time &lt; t_start<span style="color: blue"> then </span>0<span style="color: blue"> else </span><span style="color: blue">if </span>speed &lt; v_up_12<span style="color: blue"> then </span>1<span style="color: blue"> else </span><span style="color: blue">if </span>
+    speed &lt; v_up_23<span style="color: blue"> then </span>2<span style="color: blue"> else </span>3;
+
+  <span style="color: blue">if </span>gear == 0<span style="color: blue"> then</span>
+    C1 = false;
+    C2 = false;
+    B1 = false;
+    B2 = false;
+  <span style="color: blue">elseif </span>gear == 1<span style="color: blue"> then</span>
+    C1 = true;
+    C2 = false;
+    B1 = true;
+    B2 = false;
+  <span style="color: blue">elseif </span>gear == 2<span style="color: blue"> then</span>
+    C1 = true;
+    C2 = false;
+    B1 = false;
+    B2 = true;
+  <span style="color: blue">else</span>
+    C1 = true;
+    C2 = true;
+    B1 = false;
+    B2 = false;
+  <span style="color: blue">end if</span>;
+<span style="color: blue">end </span>ECU;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Fri Apr 25 16:23:19 2014.
+</address>
+</body>
+</html>

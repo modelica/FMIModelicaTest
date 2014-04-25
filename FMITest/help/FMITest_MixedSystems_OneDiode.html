@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>FMITest.MixedSystems.OneDiode</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="&quot;Test of an electrical circuit with one ideal diode leading to a mixed system of equations&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE OneDiode<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="FMITest.MixedSystems.OneDiode"></a><a href="FMITest_MixedSystems.html#FMITest.MixedSystems"
+>FMITest.MixedSystems</a>.OneDiode</h2>
+<p>
+<b>Test of an electrical circuit with one ideal diode leading to a mixed system of equations</b><br>
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons_ExamplesPackage.html#Modelica.Icons.ExamplesPackage"
+>Modelica.Icons.ExamplesPackage</a> (Icon for packages containing runnable examples).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="FMITest.MixedSystems.OneDiode.ReferenceS.png" alt="FMITest.MixedSystems.OneDiode.Reference" width="20" height="20" align="top">&nbsp;<a href="FMITest_MixedSystems_OneDiode.html#FMITest.MixedSystems.OneDiode.Reference"
+>Reference</a>
+</td>
+<td>Reference solution in pure Modelica</td>
+</tr>
+<tr>
+<td><img src="FMITest.MixedSystems.OneDiode.ReferenceS.png" alt="FMITest.MixedSystems.OneDiode.WithFMUsReference" width="20" height="20" align="top">&nbsp;<a href="FMITest_MixedSystems_OneDiode.html#FMITest.MixedSystems.OneDiode.WithFMUsReference"
+>WithFMUsReference</a>
+</td>
+<td>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.MixedSystems.OneDiode.ReferenceS.png" alt="FMITest.MixedSystems.OneDiode.WithFMUs" width="20" height="20" align="top">&nbsp;<a href="FMITest_MixedSystems_OneDiode.html#FMITest.MixedSystems.OneDiode.WithFMUs"
+>WithFMUs</a>
+</td>
+<td>Solution with FMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.MixedSystems.OneDiode.FMUModelsS.png" alt="FMITest.MixedSystems.OneDiode.FMUModels" width="20" height="20" align="top">&nbsp;<a href="FMITest_MixedSystems_OneDiode_FMUModels.html#FMITest.MixedSystems.OneDiode.FMUModels"
+>FMUModels</a>
+</td>
+<td>For all models in this package an FMU must be generated</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Reference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.MixedSystems.OneDiode.ReferenceI.png" alt="FMITest.MixedSystems.OneDiode.Reference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.MixedSystems.OneDiode.Reference"></a><a href="FMITest_MixedSystems_OneDiode.html#FMITest.MixedSystems.OneDiode"
+>FMITest.MixedSystems.OneDiode</a>.Reference</h2>
+<p>
+<b>Reference solution in pure Modelica</b>
+<br>
+<br><img src="FMITest.MixedSystems.OneDiode.ReferenceD.png" alt="FMITest.MixedSystems.OneDiode.Reference">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> Reference <span style="color: #006400">&quot;Reference solution in pure Modelica&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Electrical_Analog_Sources.html#Modelica.Electrical.Analog.Sources.SineVoltage"
+>Modelica.Electrical.Analog.Sources.SineVoltage</a> sineVoltage(V=230, freqHz=50);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Electrical_Analog_Basic.html#Modelica.Electrical.Analog.Basic.Resistor"
+>Modelica.Electrical.Analog.Basic.Resistor</a> R1(R=10);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Electrical_Analog_Ideal.html#Modelica.Electrical.Analog.Ideal.IdealDiode"
+>Modelica.Electrical.Analog.Ideal.IdealDiode</a> idealDiode(Vknee=0.8);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Electrical_Analog_Basic.html#Modelica.Electrical.Analog.Basic.Resistor"
+>Modelica.Electrical.Analog.Basic.Resistor</a> R2(R=400);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Electrical_Analog_Basic.html#Modelica.Electrical.Analog.Basic.Capacitor"
+>Modelica.Electrical.Analog.Basic.Capacitor</a> C(C=1e-4, v(start=0, fixed=true));
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Electrical_Analog_Basic.html#Modelica.Electrical.Analog.Basic.Ground"
+>Modelica.Electrical.Analog.Basic.Ground</a> ground;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(sineVoltage.p, R1.p);
+  <span style="color: red">connect</span>(R1.n, idealDiode.p);
+  <span style="color: red">connect</span>(idealDiode.n, R2.p);
+  <span style="color: red">connect</span>(R2.n, sineVoltage.n);
+  <span style="color: red">connect</span>(idealDiode.n, C.p);
+  <span style="color: red">connect</span>(C.n, sineVoltage.n);
+  <span style="color: red">connect</span>(ground.p, sineVoltage.n);
+<span style="color: blue">end </span>Reference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUsReference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.MixedSystems.OneDiode.ReferenceI.png" alt="FMITest.MixedSystems.OneDiode.WithFMUsReference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.MixedSystems.OneDiode.WithFMUsReference"></a><a href="FMITest_MixedSystems_OneDiode.html#FMITest.MixedSystems.OneDiode"
+>FMITest.MixedSystems.OneDiode</a>.WithFMUsReference</h2>
+<p>
+<b>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</b>
+<br>
+<br><img src="FMITest.MixedSystems.OneD808194e2bd800b75renceD.png" alt="FMITest.MixedSystems.OneDiode.WithFMUsReference">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUsReference <span style="color: #006400">
+  &quot;Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+
+  <a href="FMITest_MixedSystems_OneDiode_FMUModels.html#FMITest.MixedSystems.OneDiode.FMUModels.HalfCircuitWithDiode"
+>FMUModels.HalfCircuitWithDiode</a> halfCircuitWithDiode;
+  <a href="FMITest_MixedSystems_OneDiode_FMUModels.html#FMITest.MixedSystems.OneDiode.FMUModels.HalfCircuitWithLoad"
+>FMUModels.HalfCircuitWithLoad</a> halfCircuitWithLoad;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(halfCircuitWithLoad.v, halfCircuitWithDiode.v);
+  <span style="color: red">connect</span>(halfCircuitWithDiode.i, halfCircuitWithLoad.i);
+<span style="color: blue">end </span>WithFMUsReference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUs<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.MixedSystems.OneDiode.ReferenceI.png" alt="FMITest.MixedSystems.OneDiode.WithFMUs" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.MixedSystems.OneDiode.WithFMUs"></a><a href="FMITest_MixedSystems_OneDiode.html#FMITest.MixedSystems.OneDiode"
+>FMITest.MixedSystems.OneDiode</a>.WithFMUs</h2>
+<p>
+<b>Solution with FMUs</b>
+<br>
+<br><img src="FMITest.MixedSystems.OneD808194e2bd800b75renceD.png" alt="FMITest.MixedSystems.OneDiode.WithFMUs">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUs <span style="color: #006400">&quot;Solution with FMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+
+  <a href="FMITest_MixedSystems_OneDiode_FMUModels.html#FMITest.MixedSystems.OneDiode.FMUModels.HalfCircuitWithDiode"
+>FMUModels.HalfCircuitWithDiode</a> halfCircuitWithDiode;
+  <a href="FMITest_MixedSystems_OneDiode_FMUModels.html#FMITest.MixedSystems.OneDiode.FMUModels.HalfCircuitWithLoad"
+>FMUModels.HalfCircuitWithLoad</a> halfCircuitWithLoad;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(halfCircuitWithLoad.v, halfCircuitWithDiode.v);
+  <span style="color: red">connect</span>(halfCircuitWithDiode.i, halfCircuitWithLoad.i);
+<span style="color: blue">end </span>WithFMUs;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Fri Apr 25 16:23:10 2014.
+</address>
+</body>
+</html>

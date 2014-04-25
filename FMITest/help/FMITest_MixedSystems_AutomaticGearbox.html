@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>FMITest.MixedSystems.AutomaticGearbox</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="&quot;Test of coupled clutches and brakes with Boolean open/close flags leading to a mixed system of equations with Real and Booleans in the interfaces between FMUs&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE AutomaticGearbox<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="FMITest.MixedSystems.AutomaticGearbox"></a><a href="FMITest_MixedSystems.html#FMITest.MixedSystems"
+>FMITest.MixedSystems</a>.AutomaticGearbox</h2>
+<p>
+<b>Test of coupled clutches and brakes with Boolean open/close flags leading to a mixed system of equations with Real and Booleans in the interfaces between FMUs</b><br>
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons_ExamplesPackage.html#Modelica.Icons.ExamplesPackage"
+>Modelica.Icons.ExamplesPackage</a> (Icon for packages containing runnable examples).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="FMITest.MixedSystems.Auto2affba6d0e0d06earenceS.png" alt="FMITest.MixedSystems.AutomaticGearbox.Reference" width="20" height="20" align="top">&nbsp;<a href="FMITest_MixedSystems_AutomaticGearbox.html#FMITest.MixedSystems.AutomaticGearbox.Reference"
+>Reference</a>
+</td>
+<td>Reference solution in pure Modelica</td>
+</tr>
+<tr>
+<td><img src="FMITest.MixedSystems.Auto2affba6d0e0d06earenceS.png" alt="FMITest.MixedSystems.AutomaticGearbox.WithFMUsReference" width="20" height="20" align="top">&nbsp;<a href="FMITest_MixedSystems_AutomaticGearbox.html#FMITest.MixedSystems.AutomaticGearbox.WithFMUsReference"
+>WithFMUsReference</a>
+</td>
+<td>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.MixedSystems.Auto2affba6d0e0d06earenceS.png" alt="FMITest.MixedSystems.AutomaticGearbox.WithFMUs" width="20" height="20" align="top">&nbsp;<a href="FMITest_MixedSystems_AutomaticGearbox.html#FMITest.MixedSystems.AutomaticGearbox.WithFMUs"
+>WithFMUs</a>
+</td>
+<td>Solution with FMUs</td>
+</tr>
+<tr>
+<td><img src="FMITest.MixedSystems.Auto039542729fddbe50odelsS.png" alt="FMITest.MixedSystems.AutomaticGearbox.FMUModels" width="20" height="20" align="top">&nbsp;<a href="FMITest_MixedSystems_AutomaticGearbox_FMUModels.html#FMITest.MixedSystems.AutomaticGearbox.FMUModels"
+>FMUModels</a>
+</td>
+<td>For all models in this package an FMU must be generated</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Reference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.MixedSystems.Auto2affba6d0e0d06earenceI.png" alt="FMITest.MixedSystems.AutomaticGearbox.Reference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.MixedSystems.AutomaticGearbox.Reference"></a><a href="FMITest_MixedSystems_AutomaticGearbox.html#FMITest.MixedSystems.AutomaticGearbox"
+>FMITest.MixedSystems.AutomaticGearbox</a>.Reference</h2>
+<p>
+<b>Reference solution in pure Modelica</b>
+<br>
+<br><img src="FMITest.MixedSystems.Auto2affba6d0e0d06earenceD.png" alt="FMITest.MixedSystems.AutomaticGearbox.Reference">
+</p>
+<h3>Information</h3>
+
+<p>
+The parameters are selected so that both friction elements are partly  
+sliding (mode = +/- 1) or partly stuck (mode = 0). Plot the following variables:
+</p>
+
+<p>
+<img src="file:///D:/otter/_Subversion/FMI/branches/public/Test_FMUs/_FMIModelicaTest/FMITest/Resources/Images/TwoFriction1.png">
+</p>
+
+<p>
+<img src="file:///D:/otter/_Subversion/FMI/branches/public/Test_FMUs/_FMIModelicaTest/FMITest/Resources/Images/TwoFriction2.png">
+</p>
+
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Force"
+>Force</a></td><td>fn_max</td><td>1000</td><td>[N]</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> Reference <span style="color: #006400">&quot;Reference solution in pure Modelica&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+  <span style="color: blue">parameter </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_SIunits.html#Modelica.SIunits.Force"
+>Modelica.SIunits.Force</a> fn_max=1000;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.IdealPlanetary"
+>Modelica.Mechanics.Rotational.Components.IdealPlanetary</a> planetary1(ratio=
+        100/40);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.IdealPlanetary"
+>Modelica.Mechanics.Rotational.Components.IdealPlanetary</a> planetary2(ratio=
+        100/20);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Clutch"
+>Modelica.Mechanics.Rotational.Components.Clutch</a> C1(
+    fn_max=fn_max,
+    stateSelect=StateSelect.always,
+    phi_rel(fixed=true),
+    w_rel(fixed=true));
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Clutch"
+>Modelica.Mechanics.Rotational.Components.Clutch</a> C2(
+    fn_max=fn_max,
+    phi_rel(fixed=true),
+    w_rel(fixed=true),
+    stateSelect=StateSelect.always);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Brake"
+>Modelica.Mechanics.Rotational.Components.Brake</a> B2(fn_max=fn_max, useSupport=
+       false);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Brake"
+>Modelica.Mechanics.Rotational.Components.Brake</a> B1(
+    fn_max=fn_max,
+    useSupport=false,
+    phi(start=0, fixed=false),
+    w(start=0, fixed=false));
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Inertia"
+>Modelica.Mechanics.Rotational.Components.Inertia</a> inertia1(
+    J=2,
+    phi(fixed=true, start=0),
+    w(fixed=true, start=0),
+    stateSelect=StateSelect.always);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Sources.html#Modelica.Mechanics.Rotational.Sources.Torque"
+>Modelica.Mechanics.Rotational.Sources.Torque</a> torque(useSupport=false);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.Inertia"
+>Modelica.Mechanics.Rotational.Components.Inertia</a> inertia2(
+    J=0.2,
+    phi(fixed=false),
+    w(fixed=false));
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> const(k=250);
+  <a href="FMITest_MixedSystems_AutomaticGearbox_FMUModels.html#FMITest.MixedSystems.AutomaticGearbox.FMUModels.ECU"
+>FMITest.MixedSystems.AutomaticGearbox.FMUModels.ECU</a> ecu;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.IdealGear"
+>Modelica.Mechanics.Rotational.Components.IdealGear</a> gear(ratio=3, useSupport=
+       false);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Rotational_Components.html#Modelica.Mechanics.Rotational.Components.IdealGearR2T"
+>Modelica.Mechanics.Rotational.Components.IdealGearR2T</a> r2t(
+    ratio=1/0.3,
+    useSupportR=false,
+    useSupportT=false);
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Translational_Components.html#Modelica.Mechanics.Translational.Components.Mass"
+>Modelica.Mechanics.Translational.Components.Mass</a> mass(
+    m=1000,
+    s(fixed=false, start=0),
+    v(fixed=false, start=0));
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Mechanics_Translational_Sensors.html#Modelica.Mechanics.Translational.Sensors.SpeedSensor"
+>Modelica.Mechanics.Translational.Sensors.SpeedSensor</a> speedSensor;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.BooleanToReal"
+>Modelica.Blocks.Math.BooleanToReal</a> c1;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.BooleanToReal"
+>Modelica.Blocks.Math.BooleanToReal</a> c2;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.BooleanToReal"
+>Modelica.Blocks.Math.BooleanToReal</a> b1;
+  <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.BooleanToReal"
+>Modelica.Blocks.Math.BooleanToReal</a> b2;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(B2.flange_b, planetary1.sun);
+  <span style="color: red">connect</span>(inertia1.flange_b, C2.flange_a);
+  <span style="color: red">connect</span>(torque.flange, inertia1.flange_a);
+
+  <span style="color: red">connect</span>(const.y, torque.tau);
+  <span style="color: red">connect</span>(C2.flange_a, C1.flange_a);
+  <span style="color: red">connect</span>(C2.flange_b, inertia2.flange_a);
+  <span style="color: red">connect</span>(inertia2.flange_b, B2.flange_a);
+  <span style="color: red">connect</span>(planetary1.carrier, planetary2.ring);
+  <span style="color: red">connect</span>(planetary1.sun, planetary2.sun);
+  <span style="color: red">connect</span>(planetary1.ring, C1.flange_b);
+  <span style="color: red">connect</span>(planetary2.carrier, B1.flange_b);
+  <span style="color: red">connect</span>(gear.flange_b, r2t.flangeR);
+  <span style="color: red">connect</span>(r2t.flangeT, mass.flange_a);
+  <span style="color: red">connect</span>(mass.flange_b, speedSensor.flange);
+  <span style="color: red">connect</span>(planetary2.ring, gear.flange_a);
+  <span style="color: red">connect</span>(ecu.C1, c1.u);
+  <span style="color: red">connect</span>(c1.y, C1.f_normalized);
+  <span style="color: red">connect</span>(ecu.C2, c2.u);
+  <span style="color: red">connect</span>(c2.y, C2.f_normalized);
+  <span style="color: red">connect</span>(ecu.B1, b1.u);
+  <span style="color: red">connect</span>(b1.y, B1.f_normalized);
+  <span style="color: red">connect</span>(ecu.B2, b2.u);
+  <span style="color: red">connect</span>(b2.y, B2.f_normalized);
+  <span style="color: red">connect</span>(speedSensor.v, ecu.speed);
+<span style="color: blue">end </span>Reference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUsReference<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.MixedSystems.Auto2affba6d0e0d06earenceI.png" alt="FMITest.MixedSystems.AutomaticGearbox.WithFMUsReference" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.MixedSystems.AutomaticGearbox.WithFMUsReference"></a><a href="FMITest_MixedSystems_AutomaticGearbox.html#FMITest.MixedSystems.AutomaticGearbox"
+>FMITest.MixedSystems.AutomaticGearbox</a>.WithFMUsReference</h2>
+<p>
+<b>Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs</b>
+<br>
+<br><img src="FMITest.MixedSystems.Auto8057f62e143e8ea3renceD.png" alt="FMITest.MixedSystems.AutomaticGearbox.WithFMUsReference">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUsReference <span style="color: #006400">
+  &quot;Reference solution in pure Modelica using exactly the same structuring as in Model WithFMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+
+  <a href="FMITest_MixedSystems_AutomaticGearbox_FMUModels.html#FMITest.MixedSystems.AutomaticGearbox.FMUModels.AutomaticGear"
+>FMUModels.AutomaticGear</a> automaticGear;
+  <a href="FMITest_MixedSystems_AutomaticGearbox_FMUModels.html#FMITest.MixedSystems.AutomaticGearbox.FMUModels.ECU"
+>FMUModels.ECU</a> eCU;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(eCU.C2, automaticGear.c2);
+  <span style="color: red">connect</span>(eCU.B1, automaticGear.b1);
+  <span style="color: red">connect</span>(automaticGear.v, eCU.speed);
+  <span style="color: red">connect</span>(eCU.C1, automaticGear.c1);
+  <span style="color: red">connect</span>(eCU.B2, automaticGear.b2);
+<span style="color: blue">end </span>WithFMUsReference;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WithFMUs<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="FMITest.MixedSystems.Auto2affba6d0e0d06earenceI.png" alt="FMITest.MixedSystems.AutomaticGearbox.WithFMUs" align="right" style="border: 1px solid" width="80" height="80">
+<a name="FMITest.MixedSystems.AutomaticGearbox.WithFMUs"></a><a href="FMITest_MixedSystems_AutomaticGearbox.html#FMITest.MixedSystems.AutomaticGearbox"
+>FMITest.MixedSystems.AutomaticGearbox</a>.WithFMUs</h2>
+<p>
+<b>Solution with FMUs</b>
+<br>
+<br><img src="FMITest.MixedSystems.Autod5a375f95cbacf2fhFMUsD.png" alt="FMITest.MixedSystems.AutomaticGearbox.WithFMUs">
+</p>
+<h3>Information</h3>
+<p>Extends from <a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a> (Icon for runnable examples).</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span style="color: blue">model</span> WithFMUs <span style="color: #006400">&quot;Solution with FMUs&quot;</span>
+  <span style="color: blue">extends </span><a href="file:///D:/otter/Programme/Dymola/Dymola_2014_FD01/Modelica/Library/Modelica%203.2/help/Modelica_Icons.html#Modelica.Icons.Example"
+>Modelica.Icons.Example</a>;
+
+  <a href="FMITest_MixedSystems_AutomaticGearbox_FMUModels.html#FMITest.MixedSystems.AutomaticGearbox.FMUModels.AutomaticGear"
+>FMUModels.AutomaticGear</a> automaticGear;
+  <a href="FMITest_MixedSystems_AutomaticGearbox_FMUModels.html#FMITest.MixedSystems.AutomaticGearbox.FMUModels.ECU"
+>FMUModels.ECU</a> eCU;
+<span style="color: blue">equation </span>
+  <span style="color: red">connect</span>(eCU.C2, automaticGear.c2);
+  <span style="color: red">connect</span>(eCU.B1, automaticGear.b1);
+  <span style="color: red">connect</span>(automaticGear.v, eCU.speed);
+  <span style="color: red">connect</span>(eCU.C1, automaticGear.c1);
+  <span style="color: red">connect</span>(eCU.B2, automaticGear.b2);
+<span style="color: blue">end </span>WithFMUs;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Fri Apr 25 16:23:17 2014.
+</address>
+</body>
+</html>
